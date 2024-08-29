@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Dubai Theme Park Adventure",
+    "location": "Dubai, UAE",
+    "description": "Experience the ultimate thrill at Dubai Theme Park Adventure, featuring a wide variety of rides, attractions, and entertainment options for all ages.",
+    "category": "Theme Park",
+    "price": 299.99,
+    "currency": "AED",
+    "rating": 4.7,
+    "reviews": 512,
+    "images": [
+      "https://images.unsplash.com/photo-1581705150885-dff161523cc6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NDgwMDh8MHwxfHNlYXJjaHwxfHxkdWJhaSUyMHdhdGVyJTIwcGFya3xlbnwwfHx8fDE3MjQ4NDk5Mjh8MA&ixlib=rb-4.0.3&q=80&w=1080",
+
+      "https://images.unsplash.com/photo-1671397186139-c1c424da54f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NDgwMDh8MHwxfHNlYXJjaHwyfHxkdWJhaSUyMHdhdGVyJTIwcGFya3xlbnwwfHx8fDE3MjQ4NDk5Mjh8MA&ixlib=rb-4.0.3&q=80&w=1080",
+
+      "https://images.unsplash.com/photo-1686918269961-507270a5a238?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NDgwMDh8MHwxfHNlYXJjaHwzfHxkdWJhaSUyMHdhdGVyJTIwcGFya3xlbnwwfHx8fDE3MjQ4NDk5Mjh8MA&ixlib=rb-4.0.3&q=80&w=1080"
+    ],
+    "openingHours": {
+      "monday": "10:00 - 22:00",
+      "tuesday": "10:00 - 22:00",
+      "wednesday": "10:00 - 22:00",
+      "thursday": "10:00 - 22:00",
+      "friday": "10:00 - 23:00",
+      "saturday": "10:00 - 23:00",
+      "sunday": "10:00 - 22:00"
+    },
+    "contact": {
+      "phone": "+971 4 123 4567",
+      "email": "info@dubaithemepark.com"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Dubai Water World",
+    "location": "Dubai, UAE",
+    "description": "Dive into fun at Dubai Water World, a massive water park with slides, wave pools, and lazy rivers.",
+    "category": "Water Park",
+    "price": 249.99,
+    "currency": "AED",
+    "rating": 4.5,
+    "reviews": 380,
+    "images": [
+      "https://images.unsplash.com/photo-1652254433879-923b50c8fb48?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NDgwMDh8MHwxfHNlYXJjaHw0fHxkdWJhaSUyMHdhdGVyJTIwcGFya3xlbnwwfHx8fDE3MjQ4NDk5Mjh8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      "https://images.unsplash.com/photo-1650882790214-40ccc8400763?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NDgwMDh8MHwxfHNlYXJjaHw1fHxkdWJhaSUyMHdhdGVyJTIwcGFya3xlbnwwfHx8fDE3MjQ4NDk5Mjh8MA&ixlib=rb-4.0.3&q=80&w=1080"
+    ],
+    "openingHours": {
+      "monday": "11:00 - 21:00",
+      "tuesday": "11:00 - 21:00",
+      "wednesday": "11:00 - 21:00",
+      "thursday": "11:00 - 21:00",
+      "friday": "11:00 - 22:00",
+      "saturday": "11:00 - 22:00",
+      "sunday": "11:00 - 21:00"
+    },
+    "contact": {
+      "phone": "+971 4 234 5678",
+      "email": "info@dubaiwaterworld.com"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Adventure Island",
+    "location": "Dubai, UAE",
+    "description": "A sprawling adventure park featuring thrilling rides, live shows, and interactive exhibits for the whole family.",
+    "category": "Adventure Park",
+    "price": 349.99,
+    "currency": "AED",
+    "rating": 4.8,
+    "reviews": 410,
+    "images": [
+      "https://images.unsplash.com/photo-1590053404184-ce4ee04f3d58?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NDgwMDh8MHwxfHNlYXJjaHwxfHxBZHZlbnR1cmUlMjBJc2xhbmQlMjBkdWJhaSUyMHBhcmt8ZW58MHx8fHwxNzI0ODQ5Nzk4fDA&ixlib=rb-4.0.3&q=80&w=1080",
+      "https://images.unsplash.com/photo-1518684079-3c830dcef090?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NDgwMDh8MHwxfHNlYXJjaHwyfHxBZHZlbnR1cmUlMjBJc2xhbmQlMjBkdWJhaSUyMHBhcmt8ZW58MHx8fHwxNzI0ODQ5Nzk4fDA&ixlib=rb-4.0.3&q=80&w=1080",
+      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NDgwMDh8MHwxfHNlYXJjaHwzfHxBZHZlbnR1cmUlMjBJc2xhbmQlMjBkdWJhaSUyMHBhcmt8ZW58MHx8fHwxNzI0ODQ5Nzk4fDA&ixlib=rb-4.0.3&q=80&w=1080",
+      "https://images.unsplash.com/photo-1528702748617-c64d49f918af?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NDgwMDh8MHwxfHNlYXJjaHw0fHxBZHZlbnR1cmUlMjBJc2xhbmQlMjBkdWJhaSUyMHBhcmt8ZW58MHx8fHwxNzI0ODQ5Nzk4fDA&ixlib=rb-4.0.3&q=80&w=1080",
+      "https://images.unsplash.com/photo-1546412414-e1885259563a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NDgwMDh8MHwxfHNlYXJjaHw1fHxBZHZlbnR1cmUlMjBJc2xhbmQlMjBkdWJhaSUyMHBhcmt8ZW58MHx8fHwxNzI0ODQ5Nzk4fDA&ixlib=rb-4.0.3&q=80&w=1080"
+    ],
+    "openingHours": {
+      "monday": "09:00 - 20:00",
+      "tuesday": "09:00 - 20:00",
+      "wednesday": "09:00 - 20:00",
+      "thursday": "09:00 - 20:00",
+      "friday": "09:00 - 21:00",
+      "saturday": "09:00 - 21:00",
+      "sunday": "09:00 - 20:00"
+    },
+    "contact": {
+      "phone": "+971 4 345 6789",
+      "email": "info@adventureisland.com"
+    }
+  }
+]
