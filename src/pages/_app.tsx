@@ -1,6 +1,6 @@
 // src/pages/_app.tsx
-import "../styles/globals.css"; // Adjust the path if needed
-
+import "../styles/globals.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 type AppProps = {
   Component: React.ElementType;
   pageProps: any;
