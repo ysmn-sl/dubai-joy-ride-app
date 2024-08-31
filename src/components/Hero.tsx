@@ -6,7 +6,7 @@ const Hero: React.FC = () => {
   return (
     <section
       className="bg-cover bg-center h-[45vh]"
-      style={{ backgroundImage: 'url("/cover-hero.jpg")' }}
+      style={{ backgroundImage: 'url("/images/cover-hero.jpg")' }}
     >
       <div className="flex items-center justify-center h-full bg-black bg-opacity-40">
         <div className="text-center">
