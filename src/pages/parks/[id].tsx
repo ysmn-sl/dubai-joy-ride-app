@@ -6,6 +6,7 @@ import Footer from "../../components/Footer";
 import Button from "../../components/Button";
 import Image from "next/image";
 import { Park } from "@/types/park";
+import SocialShareDropdown from "@/components/SocialShareDropdown";
 
 const ParkDetailPage: React.FC = () => {
   const [park, setPark] = useState<Park | null>(null);
@@ -43,17 +44,6 @@ const ParkDetailPage: React.FC = () => {
       fetchData();
     }
   }, [id]);
-
-  const handleCopyClick = () => {
-    navigator.clipboard
-      .writeText(window.location.href)
-      .then(() => {
-        console.log("URL copied to clipboard!");
-      })
-      .catch((err) => {
-        console.error("Failed to copy: ", err);
-      });
-  };
 
   if (loading) {
     return (
@@ -172,44 +162,7 @@ const ParkDetailPage: React.FC = () => {
             <div className=" flex items-center justify-between">
               <h1 className="text-3xl font-bold text-gray-900">{park?.name}</h1>
 
-              <div className="relative dropdown">
-                <button className="dropdown-toggle text-gray-600 hover:text-gray-800 focus:outline-none">
-                  <i className="fas fa-share-alt text-2xl"></i>
-                </button>
-                <div className="dropdown-menu absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-lg shadow-lg">
-                  <ul className="list-none p-2">
-                    <li>
-                      <a
-                        href="https://facebook.com"
-                        className="flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100"
-                      >
-                        <i className="fab fa-facebook-f mr-2"></i> Facebook
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://twitter.com"
-                        className="flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100"
-                      >
-                        <i className="fab fa-twitter mr-2"></i> Twitter
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="https://linkedin.com"
-                        className="flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100"
-                      >
-                        <i className="fab fa-linkedin-in mr-2"></i> LinkedIn
-                      </a>
-                    </li>
-                    <li>
-                      <button className="flex items-center px-4 py-2 text-gray-600 hover:bg-gray-100 w-full text-left">
-                        <i className="fas fa-link mr-2"></i> Copy Link
-                      </button>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+              <SocialShareDropdown />
             </div>
 
             <div className="mt-4">
