@@ -3,20 +3,25 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import ProductList from "@/components/ProductList";
 import React, { useEffect, useState } from "react";
+import "@/lib/productService";
 import "../../styles/globals.css";
-import { Park } from "@/types/park";
+import { getAllProducts } from "@/lib/productService";
+import { Product } from "@/types/product";
 
 const ParkListPage: React.FC = () => {
-  const [parks, setParks] = useState<Park[] | null>(null);
+  const [parks, setParks] = useState<Product[] | null>(null);
   const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("/data/theme-parks.json");
-        const data = await response.json();
-        setParks(data);
+        const response = await getAllProducts();
+        if (response.status === 200) {
+          setParks(response.data);
+        } else {
+          setError("Failed to fetch data");
+        }
       } catch (error: any) {
         setError(error.message);
       } finally {
@@ -24,7 +29,7 @@ const ParkListPage: React.FC = () => {
       }
     };
     fetchData();
-  });
+  }, []);
   return (
     <>
       <Navbar />

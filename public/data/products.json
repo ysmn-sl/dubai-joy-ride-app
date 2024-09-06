@@ -1,0 +1,133 @@
+[
+  {
+    "id": 1,
+    "name": "Dubai Theme Park Adventure",
+    "location": "Dubai, UAE",
+    "description": "Experience the ultimate thrill at Dubai Theme Park Adventure, featuring a wide variety of rides, attractions, and entertainment options for all ages.",
+    "category": "Theme Park",
+    "rating": 4.7,
+    "basePrice": 299.99,
+    "currency": "AED",
+    "images": [
+      "https://images.unsplash.com/photo-1581705150885-dff161523cc6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Dubai Water World",
+    "location": "Dubai, UAE",
+    "description": "Dive into fun at Dubai Water World, a massive water park with slides, wave pools, and lazy rivers.",
+    "category": "Water Park",
+    "rating": 4.5,
+    "basePrice": 380,
+    "currency": "AED",
+    "images": [
+      "https://images.unsplash.com/photo-1652254433879-923b50c8fb48?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Adventure Island",
+    "location": "Dubai, UAE",
+    "description": "A sprawling adventure park featuring thrilling rides, live shows, and interactive exhibits for the whole family.",
+    "category": "Adventure Park",
+    "rating": 4.8,
+    "basePrice": 349.99,
+    "currency": "AED",
+    "images": [
+      "https://images.unsplash.com/photo-1590053404184-ce4ee04f3d58?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Wild Safari",
+    "location": "Dubai, UAE",
+    "description": "Embark on an unforgettable safari experience through the wild terrains of Dubai.",
+    "category": "Safari Park",
+    "rating": 4.9,
+    "basePrice": 399.99,
+    "currency": "AED",
+    "images": [
+      "https://images.unsplash.com/photo-1516974409143-9efc5f67eafb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Dubai Dolphinarium",
+    "location": "Dubai, UAE",
+    "description": "Watch amazing dolphin shows and get a chance to swim with these friendly creatures.",
+    "category": "Aquarium",
+    "rating": 4.6,
+    "basePrice": 199.99,
+    "currency": "AED",
+    "images": [
+      "https://images.unsplash.com/photo-1512546329-d44c2be0a8db?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Desert Adventure",
+    "location": "Dubai, UAE",
+    "description": "Experience a thrilling desert adventure with dune bashing, camel rides, and a traditional BBQ dinner.",
+    "category": "Desert Safari",
+    "rating": 4.7,
+    "basePrice": 449.99,
+    "currency": "AED",
+    "images": [
+      "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Dubai Snow Park",
+    "location": "Dubai, UAE",
+    "description": "Enjoy a winter wonderland in the desert with snowboarding, skiing, and ice skating.",
+    "category": "Snow Park",
+    "rating": 4.8,
+    "basePrice": 299.99,
+    "currency": "AED",
+    "images": [
+      "https://images.unsplash.com/photo-1557748323-5b63eda98b91?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Dubai Marina Cruise",
+    "location": "Dubai, UAE",
+    "description": "Take a luxurious cruise along Dubai Marina, complete with fine dining and live entertainment.",
+    "category": "Cruise",
+    "rating": 4.9,
+    "basePrice": 499.99,
+    "currency": "AED",
+    "images": [
+      "https://images.unsplash.com/photo-1556185781-a5e64cc8740b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Dubai Skydiving",
+    "location": "Dubai, UAE",
+    "description": "Feel the adrenaline rush as you skydive over Dubai's stunning skyline and Palm Jumeirah.",
+    "category": "Skydiving",
+    "rating": 4.9,
+    "basePrice": 1499.99,
+    "currency": "AED",
+    "images": [
+      "https://images.unsplash.com/photo-1571442463800-1337d7aa8400?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Burj Khalifa Observation Deck",
+    "location": "Dubai, UAE",
+    "description": "Take in the stunning panoramic views of Dubai from the observation deck of the world's tallest building.",
+    "category": "Landmark",
+    "rating": 4.9,
+    "basePrice": 199.99,
+    "currency": "AED",
+    "reviews": 600,
+    "images": [
+      "https://images.unsplash.com/photo-1543508280-77966c17f87b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+    ]
+  }
+]

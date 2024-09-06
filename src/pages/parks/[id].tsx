@@ -4,12 +4,13 @@ import { useRouter } from "next/router";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import Button from "../../components/Button";
-import { Park } from "@/types/park";
+import { ThemePark } from "@/types/themPark";
 import SocialShareDropdown from "@/components/SocialShareDropdown";
 import ProductSlider from "@/components/ProductSlider";
+import { getThemeParkById } from "@/lib/themParkService";
 
 const ParkDetailPage: React.FC = () => {
-  const [park, setPark] = useState<Park | null>(null);
+  const [park, setPark] = useState<ThemePark | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
   const router = useRouter();
@@ -19,20 +20,12 @@ const ParkDetailPage: React.FC = () => {
     if (id) {
       const fetchData = async () => {
         try {
-          const response = await fetch("/data/theme-parks.json");
-          if (!response.ok) {
-            throw new Error(
-              `Network response was not ok:  ${response.statusText}`
-            );
-          }
-          const data = await response.json();
-          const findItem = data.find(
-            (item: Park) => item.id === parseInt(id as string)
-          );
-          if (findItem) {
-            setPark(findItem);
+          const response = await getThemeParkById(parseInt(id.toString()));
+
+          if (response.status === 200) {
+            setPark(response.data);
           } else {
-            setError("Park not found");
+            setError("Theme park not found");
           }
         } catch (error: any) {
           setError(error.message);
@@ -83,7 +76,9 @@ const ParkDetailPage: React.FC = () => {
             {/*Product Details */}
             <div className="flex-1  md:mt-0 px-2 md:px-4 ">
               <div className=" flex items-center justify-between">
-                <p className="px-6 py-1 rounded-sm bg-sky-100 ">Category</p>
+                <p className="px-6 py-1 rounded-sm bg-sky-100 ">
+                  {park.category}
+                </p>
                 <SocialShareDropdown />
               </div>
               <h1 className="text-3xl mt-5 font-bold text-gray-900">
@@ -91,9 +86,9 @@ const ParkDetailPage: React.FC = () => {
               </h1>
 
               <div className="mt-4">
-                <p className="text-gray-600 ">{park?.description}</p>
+                <p className="text-gray-600 ">{park.description}</p>
                 <span className="text-2xl font-bold text-gray-900 ">
-                  AED 364
+                  {park.currency} {park.basePrice}
                 </span>
               </div>
               <div className="flex mt-4 p-2">
@@ -163,7 +158,7 @@ const ParkDetailPage: React.FC = () => {
             </div>
             <div className="flextext-center">
               <span className="text-sm md:text-xl font-bold text-gray-900 block mr-2">
-                AED 364
+                {park.currency} {park.basePrice}
               </span>
             </div>
             <Button variant="primary" onClick={() => router.push(`/cart`)}>

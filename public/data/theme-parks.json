@@ -5,16 +5,41 @@
     "location": "Dubai, UAE",
     "description": "Experience the ultimate thrill at Dubai Theme Park Adventure, featuring a wide variety of rides, attractions, and entertainment options for all ages.",
     "category": "Theme Park",
-    "price": 299.99,
+    "basePrice": 299.99,
     "currency": "AED",
+    "tickets": [
+      {
+        "type": "Standard",
+        "price": 299.99,
+        "currency": "AED",
+        "benefits": ["Access to all rides", "Free parking"]
+      },
+      {
+        "type": "VIP",
+        "price": 499.99,
+        "currency": "AED",
+        "benefits": [
+          "Priority access",
+          "VIP lounge",
+          "Free meals",
+          "Exclusive souvenirs"
+        ]
+      },
+      {
+        "type": "Family",
+        "price": 899.99,
+        "currency": "AED",
+        "benefits": [
+          "Access for 4 people",
+          "Free meals",
+          "Family photo session"
+        ]
+      }
+    ],
     "rating": 4.7,
     "reviews": 512,
     "images": [
-      "https://images.unsplash.com/photo-1581705150885-dff161523cc6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NDgwMDh8MHwxfHNlYXJjaHwxfHxkdWJhaSUyMHdhdGVyJTIwcGFya3xlbnwwfHx8fDE3MjQ4NDk5Mjh8MA&ixlib=rb-4.0.3&q=80&w=1080",
-
-      "https://images.unsplash.com/photo-1671397186139-c1c424da54f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NDgwMDh8MHwxfHNlYXJjaHwyfHxkdWJhaSUyMHdhdGVyJTIwcGFya3xlbnwwfHx8fDE3MjQ4NDk5Mjh8MA&ixlib=rb-4.0.3&q=80&w=1080",
-
-      "https://images.unsplash.com/photo-1686918269961-507270a5a238?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NDgwMDh8MHwxfHNlYXJjaHwzfHxkdWJhaSUyMHdhdGVyJTIwcGFya3xlbnwwfHx8fDE3MjQ4NDk5Mjh8MA&ixlib=rb-4.0.3&q=80&w=1080"
+      "https://images.unsplash.com/photo-1581705150885-dff161523cc6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
     ],
     "openingHours": {
       "monday": "10:00 - 22:00",
@@ -36,22 +61,45 @@
     "location": "Dubai, UAE",
     "description": "Dive into fun at Dubai Water World, a massive water park with slides, wave pools, and lazy rivers.",
     "category": "Water Park",
-    "price": 249.99,
+    "basePrice": 380,
     "currency": "AED",
+    "tickets": [
+      {
+        "type": "Standard",
+        "price": 249.99,
+        "currency": "AED",
+        "benefits": ["Access to all slides", "Locker service included"]
+      },
+      {
+        "type": "VIP",
+        "price": 399.99,
+        "currency": "AED",
+        "benefits": ["Priority access", "Private cabana", "All-day meals"]
+      },
+      {
+        "type": "Family Package",
+        "price": 799.99,
+        "currency": "AED",
+        "benefits": [
+          "Entry for 4",
+          "Access to all slides",
+          "Family meal package"
+        ]
+      }
+    ],
     "rating": 4.5,
     "reviews": 380,
     "images": [
-      "https://images.unsplash.com/photo-1652254433879-923b50c8fb48?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NDgwMDh8MHwxfHNlYXJjaHw0fHxkdWJhaSUyMHdhdGVyJTIwcGFya3xlbnwwfHx8fDE3MjQ4NDk5Mjh8MA&ixlib=rb-4.0.3&q=80&w=1080",
-      "https://images.unsplash.com/photo-1650882790214-40ccc8400763?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NDgwMDh8MHwxfHNlYXJjaHw1fHxkdWJhaSUyMHdhdGVyJTIwcGFya3xlbnwwfHx8fDE3MjQ4NDk5Mjh8MA&ixlib=rb-4.0.3&q=80&w=1080"
+      "https://images.unsplash.com/photo-1652254433879-923b50c8fb48?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
     ],
     "openingHours": {
-      "monday": "11:00 - 21:00",
-      "tuesday": "11:00 - 21:00",
-      "wednesday": "11:00 - 21:00",
-      "thursday": "11:00 - 21:00",
-      "friday": "11:00 - 22:00",
-      "saturday": "11:00 - 22:00",
-      "sunday": "11:00 - 21:00"
+      "monday": "10:00 - 22:00",
+      "tuesday": "10:00 - 22:00",
+      "wednesday": "10:00 - 22:00",
+      "thursday": "10:00 - 22:00",
+      "friday": "10:00 - 23:00",
+      "saturday": "10:00 - 23:00",
+      "sunday": "10:00 - 22:00"
     },
     "contact": {
       "phone": "+971 4 234 5678",
@@ -64,25 +112,45 @@
     "location": "Dubai, UAE",
     "description": "A sprawling adventure park featuring thrilling rides, live shows, and interactive exhibits for the whole family.",
     "category": "Adventure Park",
-    "price": 349.99,
+    "basePrice": 349.99,
     "currency": "AED",
+    "tickets": [
+      {
+        "type": "Standard",
+        "price": 349.99,
+        "currency": "AED",
+        "benefits": ["Access to all rides", "Free shows"]
+      },
+      {
+        "type": "VIP",
+        "price": 549.99,
+        "currency": "AED",
+        "benefits": [
+          "Priority access",
+          "VIP seating at shows",
+          "Exclusive souvenirs"
+        ]
+      },
+      {
+        "type": "All-Day Pass",
+        "price": 449.99,
+        "currency": "AED",
+        "benefits": ["Unlimited ride access", "Priority seating at shows"]
+      }
+    ],
     "rating": 4.8,
     "reviews": 410,
     "images": [
-      "https://images.unsplash.com/photo-1590053404184-ce4ee04f3d58?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NDgwMDh8MHwxfHNlYXJjaHwxfHxBZHZlbnR1cmUlMjBJc2xhbmQlMjBkdWJhaSUyMHBhcmt8ZW58MHx8fHwxNzI0ODQ5Nzk4fDA&ixlib=rb-4.0.3&q=80&w=1080",
-      "https://images.unsplash.com/photo-1518684079-3c830dcef090?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NDgwMDh8MHwxfHNlYXJjaHwyfHxBZHZlbnR1cmUlMjBJc2xhbmQlMjBkdWJhaSUyMHBhcmt8ZW58MHx8fHwxNzI0ODQ5Nzk4fDA&ixlib=rb-4.0.3&q=80&w=1080",
-      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NDgwMDh8MHwxfHNlYXJjaHwzfHxBZHZlbnR1cmUlMjBJc2xhbmQlMjBkdWJhaSUyMHBhcmt8ZW58MHx8fHwxNzI0ODQ5Nzk4fDA&ixlib=rb-4.0.3&q=80&w=1080",
-      "https://images.unsplash.com/photo-1528702748617-c64d49f918af?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NDgwMDh8MHwxfHNlYXJjaHw0fHxBZHZlbnR1cmUlMjBJc2xhbmQlMjBkdWJhaSUyMHBhcmt8ZW58MHx8fHwxNzI0ODQ5Nzk4fDA&ixlib=rb-4.0.3&q=80&w=1080",
-      "https://images.unsplash.com/photo-1546412414-e1885259563a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NDgwMDh8MHwxfHNlYXJjaHw1fHxBZHZlbnR1cmUlMjBJc2xhbmQlMjBkdWJhaSUyMHBhcmt8ZW58MHx8fHwxNzI0ODQ5Nzk4fDA&ixlib=rb-4.0.3&q=80&w=1080"
+      "https://images.unsplash.com/photo-1590053404184-ce4ee04f3d58?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
     ],
     "openingHours": {
-      "monday": "09:00 - 20:00",
-      "tuesday": "09:00 - 20:00",
-      "wednesday": "09:00 - 20:00",
-      "thursday": "09:00 - 20:00",
-      "friday": "09:00 - 21:00",
-      "saturday": "09:00 - 21:00",
-      "sunday": "09:00 - 20:00"
+      "monday": "10:00 - 22:00",
+      "tuesday": "10:00 - 22:00",
+      "wednesday": "10:00 - 22:00",
+      "thursday": "10:00 - 22:00",
+      "friday": "10:00 - 23:00",
+      "saturday": "10:00 - 23:00",
+      "sunday": "10:00 - 22:00"
     },
     "contact": {
       "phone": "+971 4 345 6789",
@@ -91,20 +159,44 @@
   },
   {
     "id": 4,
-    "name": "Dubai Theme Park Adventure",
+    "name": "Wild Safari",
     "location": "Dubai, UAE",
-    "description": "Experience the ultimate thrill at Dubai Theme Park Adventure, featuring a wide variety of rides, attractions, and entertainment options for all ages.",
-    "category": "Theme Park",
-    "price": 299.99,
+    "description": "Embark on an unforgettable safari experience through the wild terrains of Dubai.",
+    "category": "Safari Park",
+    "basePrice": 399.99,
     "currency": "AED",
-    "rating": 4.7,
-    "reviews": 512,
+    "tickets": [
+      {
+        "type": "Standard",
+        "price": 399.99,
+        "currency": "AED",
+        "benefits": ["Guided tour", "Access to safari park"]
+      },
+      {
+        "type": "VIP Tour",
+        "price": 599.99,
+        "currency": "AED",
+        "benefits": [
+          "Private guide",
+          "Exclusive animal encounters",
+          "Lunch included"
+        ]
+      },
+      {
+        "type": "Family Package",
+        "price": 999.99,
+        "currency": "AED",
+        "benefits": [
+          "Entry for 4 people",
+          "Lunch",
+          "Exclusive family photo session"
+        ]
+      }
+    ],
+    "rating": 4.9,
+    "reviews": 275,
     "images": [
-      "https://images.unsplash.com/photo-1581705150885-dff161523cc6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NDgwMDh8MHwxfHNlYXJjaHwxfHxkdWJhaSUyMHdhdGVyJTIwcGFya3xlbnwwfHx8fDE3MjQ4NDk5Mjh8MA&ixlib=rb-4.0.3&q=80&w=1080",
-
-      "https://images.unsplash.com/photo-1671397186139-c1c424da54f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NDgwMDh8MHwxfHNlYXJjaHwyfHxkdWJhaSUyMHdhdGVyJTIwcGFya3xlbnwwfHx8fDE3MjQ4NDk5Mjh8MA&ixlib=rb-4.0.3&q=80&w=1080",
-
-      "https://images.unsplash.com/photo-1686918269961-507270a5a238?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NDgwMDh8MHwxfHNlYXJjaHwzfHxkdWJhaSUyMHdhdGVyJTIwcGFya3xlbnwwfHx8fDE3MjQ4NDk5Mjh8MA&ixlib=rb-4.0.3&q=80&w=1080"
+      "https://images.unsplash.com/photo-1516974409143-9efc5f67eafb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
     ],
     "openingHours": {
       "monday": "10:00 - 22:00",
@@ -116,85 +208,300 @@
       "sunday": "10:00 - 22:00"
     },
     "contact": {
-      "phone": "+971 4 123 4567",
-      "email": "info@dubaithemepark.com"
+      "phone": "+971 4 456 7890",
+      "email": "info@wildsafari.com"
     }
   },
   {
     "id": 5,
-    "name": "Dubai Water World",
+    "name": "Dubai Dolphinarium",
     "location": "Dubai, UAE",
-    "description": "Dive into fun at Dubai Water World, a massive water park with slides, wave pools, and lazy rivers.",
-    "category": "Water Park",
-    "price": 249.99,
+    "description": "Watch amazing dolphin shows and get a chance to swim with these friendly creatures.",
+    "category": "Aquarium",
+    "basePrice": 199.99,
     "currency": "AED",
-    "rating": 4.5,
-    "reviews": 380,
+    "tickets": [
+      {
+        "type": "Show Only",
+        "price": 199.99,
+        "currency": "AED",
+        "benefits": ["Dolphin show", "Seal show"]
+      },
+      {
+        "type": "Swim with Dolphins",
+        "price": 599.99,
+        "currency": "AED",
+        "benefits": ["Dolphin show", "Swimming with dolphins"]
+      },
+      {
+        "type": "VIP Experience",
+        "price": 899.99,
+        "currency": "AED",
+        "benefits": [
+          "Private dolphin swim",
+          "Exclusive dolphin show seating",
+          "Photo session"
+        ]
+      }
+    ],
+    "rating": 4.6,
+    "reviews": 300,
     "images": [
-      "https://images.unsplash.com/photo-1652254433879-923b50c8fb48?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NDgwMDh8MHwxfHNlYXJjaHw0fHxkdWJhaSUyMHdhdGVyJTIwcGFya3xlbnwwfHx8fDE3MjQ4NDk5Mjh8MA&ixlib=rb-4.0.3&q=80&w=1080",
-      "https://images.unsplash.com/photo-1650882790214-40ccc8400763?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NDgwMDh8MHwxfHNlYXJjaHw1fHxkdWJhaSUyMHdhdGVyJTIwcGFya3xlbnwwfHx8fDE3MjQ4NDk5Mjh8MA&ixlib=rb-4.0.3&q=80&w=1080"
+      "https://images.unsplash.com/photo-1512546329-d44c2be0a8db?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
     ],
     "openingHours": {
-      "monday": "11:00 - 21:00",
-      "tuesday": "11:00 - 21:00",
-      "wednesday": "11:00 - 21:00",
-      "thursday": "11:00 - 21:00",
-      "friday": "11:00 - 22:00",
-      "saturday": "11:00 - 22:00",
-      "sunday": "11:00 - 21:00"
+      "monday": "10:00 - 22:00",
+      "tuesday": "10:00 - 22:00",
+      "wednesday": "10:00 - 22:00",
+      "thursday": "10:00 - 22:00",
+      "friday": "10:00 - 23:00",
+      "saturday": "10:00 - 23:00",
+      "sunday": "10:00 - 22:00"
     },
     "contact": {
-      "phone": "+971 4 234 5678",
-      "email": "info@dubaiwaterworld.com"
+      "phone": "+971 4 567 8901",
+      "email": "info@dubaidolphinarium.com"
     }
   },
   {
     "id": 6,
-    "name": "Adventure Island",
+    "name": "Desert Adventure",
     "location": "Dubai, UAE",
-    "description": "A sprawling adventure park featuring thrilling rides, live shows, and interactive exhibits for the whole family.",
-    "category": "Adventure Park",
-    "price": 349.99,
+    "description": "Experience a thrilling desert adventure with dune bashing, camel rides, and a traditional BBQ dinner.",
+    "category": "Desert Safari",
+    "basePrice": 449.99,
     "currency": "AED",
-    "rating": 4.8,
-    "reviews": 410,
+    "tickets": [
+      {
+        "type": "Standard",
+        "price": 449.99,
+        "currency": "AED",
+        "benefits": ["Dune bashing", "Camel ride", "BBQ dinner"]
+      },
+      {
+        "type": "Premium",
+        "price": 649.99,
+        "currency": "AED",
+        "benefits": [
+          "Private dune bashing",
+          "Camel ride",
+          "BBQ dinner",
+          "VIP seating"
+        ]
+      },
+      {
+        "type": "Exclusive Experience",
+        "price": 999.99,
+        "currency": "AED",
+        "benefits": [
+          "Private dune bashing",
+          "Camel ride",
+          "Private tent",
+          "BBQ dinner"
+        ]
+      }
+    ],
+    "rating": 4.7,
+    "reviews": 320,
     "images": [
-      "https://images.unsplash.com/photo-1590053404184-ce4ee04f3d58?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NDgwMDh8MHwxfHNlYXJjaHwxfHxBZHZlbnR1cmUlMjBJc2xhbmQlMjBkdWJhaSUyMHBhcmt8ZW58MHx8fHwxNzI0ODQ5Nzk4fDA&ixlib=rb-4.0.3&q=80&w=1080",
-      "https://images.unsplash.com/photo-1518684079-3c830dcef090?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NDgwMDh8MHwxfHNlYXJjaHwyfHxBZHZlbnR1cmUlMjBJc2xhbmQlMjBkdWJhaSUyMHBhcmt8ZW58MHx8fHwxNzI0ODQ5Nzk4fDA&ixlib=rb-4.0.3&q=80&w=1080",
-      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NDgwMDh8MHwxfHNlYXJjaHwzfHxBZHZlbnR1cmUlMjBJc2xhbmQlMjBkdWJhaSUyMHBhcmt8ZW58MHx8fHwxNzI0ODQ5Nzk4fDA&ixlib=rb-4.0.3&q=80&w=1080",
-      "https://images.unsplash.com/photo-1528702748617-c64d49f918af?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NDgwMDh8MHwxfHNlYXJjaHw0fHxBZHZlbnR1cmUlMjBJc2xhbmQlMjBkdWJhaSUyMHBhcmt8ZW58MHx8fHwxNzI0ODQ5Nzk4fDA&ixlib=rb-4.0.3&q=80&w=1080",
-      "https://images.unsplash.com/photo-1546412414-e1885259563a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NDgwMDh8MHwxfHNlYXJjaHw1fHxBZHZlbnR1cmUlMjBJc2xhbmQlMjBkdWJhaSUyMHBhcmt8ZW58MHx8fHwxNzI0ODQ5Nzk4fDA&ixlib=rb-4.0.3&q=80&w=1080"
+      "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
     ],
     "openingHours": {
-      "monday": "09:00 - 20:00",
-      "tuesday": "09:00 - 20:00",
-      "wednesday": "09:00 - 20:00",
-      "thursday": "09:00 - 20:00",
-      "friday": "09:00 - 21:00",
-      "saturday": "09:00 - 21:00",
-      "sunday": "09:00 - 20:00"
+      "monday": "10:00 - 22:00",
+      "tuesday": "10:00 - 22:00",
+      "wednesday": "10:00 - 22:00",
+      "thursday": "10:00 - 22:00",
+      "friday": "10:00 - 23:00",
+      "saturday": "10:00 - 23:00",
+      "sunday": "10:00 - 22:00"
     },
     "contact": {
-      "phone": "+971 4 345 6789",
-      "email": "info@adventureisland.com"
+      "phone": "+971 4 678 9012",
+      "email": "info@desertadventure.com"
     }
   },
   {
     "id": 7,
-    "name": "Dubai Theme Park Adventure",
+    "name": "Dubai Snow Park",
     "location": "Dubai, UAE",
-    "description": "Experience the ultimate thrill at Dubai Theme Park Adventure, featuring a wide variety of rides, attractions, and entertainment options for all ages.",
-    "category": "Theme Park",
-    "price": 299.99,
+    "description": "Enjoy a winter wonderland in the desert with snowboarding, skiing, and ice skating.",
+    "category": "Snow Park",
+    "basePrice": 299.99,
     "currency": "AED",
-    "rating": 4.7,
-    "reviews": 512,
+    "tickets": [
+      {
+        "type": "Standard",
+        "price": 299.99,
+        "currency": "AED",
+        "benefits": ["Skiing", "Snowboarding", "Ice skating"]
+      },
+      {
+        "type": "Full Access",
+        "price": 399.99,
+        "currency": "AED",
+        "benefits": ["Unlimited skiing", "Snowboarding", "Access to snow park"]
+      },
+      {
+        "type": "Family Package",
+        "price": 699.99,
+        "currency": "AED",
+        "benefits": ["Access for 4", "Unlimited activities", "Photo session"]
+      }
+    ],
+    "rating": 4.8,
+    "reviews": 285,
     "images": [
-      "https://images.unsplash.com/photo-1581705150885-dff161523cc6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NDgwMDh8MHwxfHNlYXJjaHwxfHxkdWJhaSUyMHdhdGVyJTIwcGFya3xlbnwwfHx8fDE3MjQ4NDk5Mjh8MA&ixlib=rb-4.0.3&q=80&w=1080",
-
-      "https://images.unsplash.com/photo-1671397186139-c1c424da54f1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NDgwMDh8MHwxfHNlYXJjaHwyfHxkdWJhaSUyMHdhdGVyJTIwcGFya3xlbnwwfHx8fDE3MjQ4NDk5Mjh8MA&ixlib=rb-4.0.3&q=80&w=1080",
-
-      "https://images.unsplash.com/photo-1686918269961-507270a5a238?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NDgwMDh8MHwxfHNlYXJjaHwzfHxkdWJhaSUyMHdhdGVyJTIwcGFya3xlbnwwfHx8fDE3MjQ4NDk5Mjh8MA&ixlib=rb-4.0.3&q=80&w=1080"
+      "https://images.unsplash.com/photo-1557748323-5b63eda98b91?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+    ],
+    "openingHours": {
+      "monday": "10:00 - 22:00",
+      "tuesday": "10:00 - 22:00",
+      "wednesday": "10:00 - 22:00",
+      "thursday": "10:00 - 22:00",
+      "friday": "10:00 - 23:00",
+      "saturday": "10:00 - 23:00",
+      "sunday": "10:00 - 22:00"
+    },
+    "contact": {
+      "phone": "+971 4 789 0123",
+      "email": "info@dubaisnowpark.com"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Dubai Marina Cruise",
+    "location": "Dubai, UAE",
+    "description": "Take a luxurious cruise along Dubai Marina, complete with fine dining and live entertainment.",
+    "category": "Cruise",
+    "basePrice": 499.99,
+    "currency": "AED",
+    "tickets": [
+      {
+        "type": "Standard",
+        "price": 499.99,
+        "currency": "AED",
+        "benefits": ["Dinner", "Live music", "2-hour cruise"]
+      },
+      {
+        "type": "VIP",
+        "price": 799.99,
+        "currency": "AED",
+        "benefits": ["Private table", "Exclusive menu", "4-hour cruise"]
+      },
+      {
+        "type": "Exclusive Package",
+        "price": 1199.99,
+        "currency": "AED",
+        "benefits": ["Private yacht", "Fine dining", "Unlimited drinks"]
+      }
+    ],
+    "rating": 4.9,
+    "reviews": 340,
+    "images": [
+      "https://images.unsplash.com/photo-1556185781-a5e64cc8740b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+    ],
+    "openingHours": {
+      "monday": "10:00 - 22:00",
+      "tuesday": "10:00 - 22:00",
+      "wednesday": "10:00 - 22:00",
+      "thursday": "10:00 - 22:00",
+      "friday": "10:00 - 23:00",
+      "saturday": "10:00 - 23:00",
+      "sunday": "10:00 - 22:00"
+    },
+    "contact": {
+      "phone": "+971 4 890 1234",
+      "email": "info@dubaimarinacruise.com"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Dubai Skydiving",
+    "location": "Dubai, UAE",
+    "description": "Feel the adrenaline rush as you skydive over Dubai's stunning skyline and Palm Jumeirah.",
+    "category": "Skydiving",
+    "basePrice": 1499.99,
+    "currency": "AED",
+    "tickets": [
+      {
+        "type": "Standard",
+        "price": 1499.99,
+        "currency": "AED",
+        "benefits": ["Skydive experience", "Training session", "Certificate"]
+      },
+      {
+        "type": "Tandem Skydive",
+        "price": 1999.99,
+        "currency": "AED",
+        "benefits": [
+          "Tandem skydive",
+          "Video and photos included",
+          "Certificate"
+        ]
+      },
+      {
+        "type": "Exclusive VIP Skydive",
+        "price": 2499.99,
+        "currency": "AED",
+        "benefits": [
+          "Private skydive",
+          "VIP service",
+          "Video and photos",
+          "Special certificate"
+        ]
+      }
+    ],
+    "rating": 4.9,
+    "reviews": 500,
+    "images": [
+      "https://images.unsplash.com/photo-1571442463800-1337d7aa8400?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+    ],
+    "openingHours": {
+      "monday": "10:00 - 22:00",
+      "tuesday": "10:00 - 22:00",
+      "wednesday": "10:00 - 22:00",
+      "thursday": "10:00 - 22:00",
+      "friday": "10:00 - 23:00",
+      "saturday": "10:00 - 23:00",
+      "sunday": "10:00 - 22:00"
+    },
+    "contact": {
+      "phone": "+971 4 901 2345",
+      "email": "info@dubaiskydiving.com"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Burj Khalifa Observation Deck",
+    "location": "Dubai, UAE",
+    "description": "Take in the stunning panoramic views of Dubai from the observation deck of the world's tallest building.",
+    "category": "Landmark",
+    "basePrice": 199.99,
+    "currency": "AED",
+    "tickets": [
+      {
+        "type": "General Admission",
+        "price": 199.99,
+        "currency": "AED",
+        "benefits": ["Access to observation deck"]
+      },
+      {
+        "type": "VIP Experience",
+        "price": 399.99,
+        "currency": "AED",
+        "benefits": ["Priority access", "VIP lounge", "Exclusive guide"]
+      },
+      {
+        "type": "Sunset Experience",
+        "price": 299.99,
+        "currency": "AED",
+        "benefits": ["Access during sunset", "Free photo session", "Souvenir"]
+      }
+    ],
+    "rating": 4.9,
+    "reviews": 600,
+    "images": [
+      "https://images.unsplash.com/photo-1543508280-77966c17f87b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
     ],
     "openingHours": {
       "monday": "10:00 - 22:00",
@@ -207,66 +514,7 @@
     },
     "contact": {
       "phone": "+971 4 123 4567",
-      "email": "info@dubaithemepark.com"
-    }
-  },
-  {
-    "id": 8,
-    "name": "Dubai Water World",
-    "location": "Dubai, UAE",
-    "description": "Dive into fun at Dubai Water World, a massive water park with slides, wave pools, and lazy rivers.",
-    "category": "Water Park",
-    "price": 249.99,
-    "currency": "AED",
-    "rating": 4.5,
-    "reviews": 380,
-    "images": [
-      "https://images.unsplash.com/photo-1652254433879-923b50c8fb48?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NDgwMDh8MHwxfHNlYXJjaHw0fHxkdWJhaSUyMHdhdGVyJTIwcGFya3xlbnwwfHx8fDE3MjQ4NDk5Mjh8MA&ixlib=rb-4.0.3&q=80&w=1080",
-      "https://images.unsplash.com/photo-1650882790214-40ccc8400763?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NDgwMDh8MHwxfHNlYXJjaHw1fHxkdWJhaSUyMHdhdGVyJTIwcGFya3xlbnwwfHx8fDE3MjQ4NDk5Mjh8MA&ixlib=rb-4.0.3&q=80&w=1080"
-    ],
-    "openingHours": {
-      "monday": "11:00 - 21:00",
-      "tuesday": "11:00 - 21:00",
-      "wednesday": "11:00 - 21:00",
-      "thursday": "11:00 - 21:00",
-      "friday": "11:00 - 22:00",
-      "saturday": "11:00 - 22:00",
-      "sunday": "11:00 - 21:00"
-    },
-    "contact": {
-      "phone": "+971 4 234 5678",
-      "email": "info@dubaiwaterworld.com"
-    }
-  },
-  {
-    "id": 9,
-    "name": "Adventure Island",
-    "location": "Dubai, UAE",
-    "description": "A sprawling adventure park featuring thrilling rides, live shows, and interactive exhibits for the whole family.",
-    "category": "Adventure Park",
-    "price": 349.99,
-    "currency": "AED",
-    "rating": 4.8,
-    "reviews": 410,
-    "images": [
-      "https://images.unsplash.com/photo-1590053404184-ce4ee04f3d58?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NDgwMDh8MHwxfHNlYXJjaHwxfHxBZHZlbnR1cmUlMjBJc2xhbmQlMjBkdWJhaSUyMHBhcmt8ZW58MHx8fHwxNzI0ODQ5Nzk4fDA&ixlib=rb-4.0.3&q=80&w=1080",
-      "https://images.unsplash.com/photo-1518684079-3c830dcef090?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NDgwMDh8MHwxfHNlYXJjaHwyfHxBZHZlbnR1cmUlMjBJc2xhbmQlMjBkdWJhaSUyMHBhcmt8ZW58MHx8fHwxNzI0ODQ5Nzk4fDA&ixlib=rb-4.0.3&q=80&w=1080",
-      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NDgwMDh8MHwxfHNlYXJjaHwzfHxBZHZlbnR1cmUlMjBJc2xhbmQlMjBkdWJhaSUyMHBhcmt8ZW58MHx8fHwxNzI0ODQ5Nzk4fDA&ixlib=rb-4.0.3&q=80&w=1080",
-      "https://images.unsplash.com/photo-1528702748617-c64d49f918af?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NDgwMDh8MHwxfHNlYXJjaHw0fHxBZHZlbnR1cmUlMjBJc2xhbmQlMjBkdWJhaSUyMHBhcmt8ZW58MHx8fHwxNzI0ODQ5Nzk4fDA&ixlib=rb-4.0.3&q=80&w=1080",
-      "https://images.unsplash.com/photo-1546412414-e1885259563a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NDgwMDh8MHwxfHNlYXJjaHw1fHxBZHZlbnR1cmUlMjBJc2xhbmQlMjBkdWJhaSUyMHBhcmt8ZW58MHx8fHwxNzI0ODQ5Nzk4fDA&ixlib=rb-4.0.3&q=80&w=1080"
-    ],
-    "openingHours": {
-      "monday": "09:00 - 20:00",
-      "tuesday": "09:00 - 20:00",
-      "wednesday": "09:00 - 20:00",
-      "thursday": "09:00 - 20:00",
-      "friday": "09:00 - 21:00",
-      "saturday": "09:00 - 21:00",
-      "sunday": "09:00 - 20:00"
-    },
-    "contact": {
-      "phone": "+971 4 345 6789",
-      "email": "info@adventureisland.com"
+      "email": "info@burjkhalifa.com"
     }
   }
 ]
