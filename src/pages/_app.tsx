@@ -7,7 +7,7 @@ type AppProps = {
 };
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+  return <Component {...pageProps} className="font-poppins" />;
 }
 
 export default MyApp;

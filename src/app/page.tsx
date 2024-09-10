@@ -35,7 +35,7 @@ const HomePage: React.FC = () => {
     <>
       <Navbar />
       <Hero />
-      <div className="container mx-auto px-4 py-8">
+      <div className="container mx-auto px-4 py-8 font-poppins">
         {parks && <ProductList products={parks} />}
       </div>
       <Footer />
