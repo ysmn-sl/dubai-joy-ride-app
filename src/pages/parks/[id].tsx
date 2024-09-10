@@ -38,6 +38,23 @@ const ParkDetailPage: React.FC = () => {
     }
   }, [id]);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const stickyElement = document.getElementById("stickyElement");
+      if (window.scrollY > 100) {
+        stickyElement?.classList.remove("hidden");
+      } else {
+        stickyElement?.classList.add("hidden");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   if (loading) {
     return (
       <>
@@ -66,9 +83,9 @@ const ParkDetailPage: React.FC = () => {
     <>
       <Navbar />
       {park && (
-        <div className=" mx-auto bg-white ">
+        <div className=" mx-auto bg-white px-4  ">
           {/*Product Section */}
-          <div className="flex flex-col md:flex-row mt-2 ">
+          <div className="flex flex-col md:flex-row mt-2 py-8 ">
             {/*Product Images */}
             <div className="flex-none max-w-[623px] mx-auto md:w-1/2 md:sticky md:top-4 md:self-start px-2">
               {park.images && <ProductSlider images={park.images} />}
@@ -76,34 +93,36 @@ const ParkDetailPage: React.FC = () => {
             {/*Product Details */}
             <div className="flex-1  md:mt-0 px-2 md:px-4 ">
               <div className=" flex items-center justify-between">
-                <p className="px-6 py-1 rounded-sm bg-sky-100 ">
+                <p className="px-4 py-1 rounded-sm bg-sky-100 text-sm">
                   {park.category}
                 </p>
                 <SocialShareDropdown />
               </div>
-              <h1 className="text-3xl mt-5 font-bold text-gray-900">
+              <h1 className="text-3xl mt-2 font-bold text-gray-900">
                 {park.name}
               </h1>
 
               <div className="mt-4">
-                <p className="text-gray-600 ">{park.description}</p>
-                <span className="text-2xl font-bold text-gray-900 ">
+                <span className="text-2xl  text-gray-900  ">
                   {park.currency} {park.basePrice}
                 </span>
               </div>
-              <div className="flex mt-4 p-2">
-                <div className=" flex flex-row bg-gray-300 text-slate-800 font-semibold rounded-lg  items-center px-2 mr-3">
-                  <span className="mr-2">Quantity:</span>
-                  <select className="bg-gray-300 text-slate-800 font-semibold  ">
+              <div className="flex mt-4">
+                <div className=" flex flex-row bg-gray-100 text-slate-700 font-semibold rounded-lg  items-center px-2 mr-3">
+                  <span className="">Quantity:</span>
+                  <select className="bg-gray-100 text-slate-700 ">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4">4</option>
                   </select>
                 </div>
-                <Button variant="primary" onClick={() => router.push(`/cart`)}>
-                  Book Tickets
-                </Button>
+                <button
+                  className="bg-blue-800 text-white py-2 px-4 rounded-xl text-lg flex-grow"
+                  onClick={() => router.push(`/cart`)}
+                >
+                  Book Ticket
+                </button>
               </div>
               {/*Product Description Section */}
               <div className="bg-white shadow-md rounded-lg p-6 mt-6">
@@ -149,7 +168,7 @@ const ParkDetailPage: React.FC = () => {
 
           <div
             id="stickyElement"
-            className="hidden flex flex-row shadow-lg rounded-lg sticky bottom-2 bg-slate-100 p-4 items-center mt-8"
+            className="hidden flex flex-row shadow-lg rounded-lg sticky bottom-2 bg-slate-100 p-4 items-center mt-8 mb-4"
           >
             <div className="flex-1">
               <h2 className="text-sm md:text-xl  font-bold text-gray-800">
