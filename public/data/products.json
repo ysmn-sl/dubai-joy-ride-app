@@ -9,7 +9,9 @@
     "basePrice": 299.99,
     "currency": "AED",
     "images": [
-      "https://images.unsplash.com/photo-1581705150885-dff161523cc6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+      "https://images.unsplash.com/photo-1615544261596-dc0a4898f2c0?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1615544263302-9065606a2722?q=80&w=1660&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1460176449511-ff5fc8e64c35?q=80&w=1748&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     ]
   },
   {
@@ -22,7 +24,8 @@
     "basePrice": 380,
     "currency": "AED",
     "images": [
-      "https://images.unsplash.com/photo-1652254433879-923b50c8fb48?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+      "https://images.unsplash.com/photo-1707575878561-794d400bbb1e?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1526762100-0999d11d611c?q=80&w=1633&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     ]
   },
   {
@@ -35,7 +38,8 @@
     "basePrice": 349.99,
     "currency": "AED",
     "images": [
-      "https://images.unsplash.com/photo-1590053404184-ce4ee04f3d58?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+      "https://images.unsplash.com/photo-1638635433267-4d83a001b80f?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1594950981383-6eb659d18fbf?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     ]
   },
   {
@@ -48,7 +52,8 @@
     "basePrice": 399.99,
     "currency": "AED",
     "images": [
-      "https://images.unsplash.com/photo-1516974409143-9efc5f67eafb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+      "https://images.unsplash.com/photo-1690393637461-9007a8b41fbf?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1503919005314-30d93d07d823?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     ]
   },
   {
@@ -61,12 +66,14 @@
     "basePrice": 199.99,
     "currency": "AED",
     "images": [
-      "https://images.unsplash.com/photo-1512546329-d44c2be0a8db?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+      "https://images.unsplash.com/photo-1621629294933-2a73c50eb72f?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1552482846-1e02d20bdcdc?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1532639766504-227d1fd0f2ff?q=80&w=1746&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     ]
   },
   {
     "id": 6,
-    "name": "Desert Adventure",
+    "name": "Desert Adventure 11",
     "location": "Dubai, UAE",
     "description": "Experience a thrilling desert adventure with dune bashing, camel rides, and a traditional BBQ dinner.",
     "category": "Desert Safari",
@@ -74,7 +81,8 @@
     "basePrice": 449.99,
     "currency": "AED",
     "images": [
-      "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+      "https://images.unsplash.com/photo-1517176642928-dfc2da661b3f?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1623972860045-f2d0accbcf38?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     ]
   },
   {
@@ -100,7 +108,8 @@
     "basePrice": 499.99,
     "currency": "AED",
     "images": [
-      "https://images.unsplash.com/photo-1556185781-a5e64cc8740b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+      "https://images.unsplash.com/photo-1504434026032-a7e440a30b68?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1530649159659-c8beb2992433?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     ]
   },
   {
@@ -113,7 +122,10 @@
     "basePrice": 1499.99,
     "currency": "AED",
     "images": [
-      "https://images.unsplash.com/photo-1571442463800-1337d7aa8400?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+      "https://images.unsplash.com/photo-1659221876406-31a3746f41b9?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1675645294783-8ae8e106a03a?q=80&w=1610&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1601024445121-e5b82f020549?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1659901992446-832c80b26354?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     ]
   },
   {
@@ -127,7 +139,8 @@
     "currency": "AED",
     "reviews": 600,
     "images": [
-      "https://images.unsplash.com/photo-1543508280-77966c17f87b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+      "https://images.unsplash.com/photo-1628155092735-d1146f19cd58?q=80&w=1527&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1686906773242-bed68d99734c?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     ]
   }
 ]
