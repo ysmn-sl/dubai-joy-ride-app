@@ -6,6 +6,8 @@ import Navbar from "@/components/Navbar";
 import { Ticket } from "@/types/themPark";
 import { useRouter } from "next/router";
 import { DateInfo } from "@/types/dateInfo";
+import { getAllThemeParkTicketById } from "@/lib/themParkService";
+import { error } from "console";
 
 const BookPage: React.FC = () => {
   const getTodayDateInfo = (): DateInfo => {
@@ -18,39 +20,32 @@ const BookPage: React.FC = () => {
       }),
     };
   };
+  const [tickets, setTickes] = useState<Ticket[] | null>();
   const [selectedDate, setSelectedDate] = useState<DateInfo>(getTodayDateInfo); // State to hold selected date
   const [selectedTicket, setSelectedTicket] = useState<Ticket | null>(null); // State to hold selected ticket
   const router = useRouter();
   const AddToCartRef = useRef<HTMLDivElement | null>(null);
+  const { id } = router.query;
+  const { product } = router.query;
 
-  const tickets: Ticket[] = [
-    {
-      id: 1,
-      type: "Standard",
-      price: 299.99,
-      currency: "AED",
-      benefits: ["Access to all rides", "Free parking"],
-    },
-    {
-      id: 2,
-      type: "VIP",
-      price: 499.99,
-      currency: "AED",
-      benefits: [
-        "Priority access",
-        "VIP lounge",
-        "Free meals",
-        "Exclusive souvenirs",
-      ],
-    },
-    {
-      id: 3,
-      type: "Family",
-      price: 899.99,
-      currency: "AED",
-      benefits: ["Access for 4 people", "Free meals", "Family photo session"],
-    },
-  ];
+  useEffect(() => {
+    if (id) {
+      const fetchData = async () => {
+        try {
+          const response = await getAllThemeParkTicketById(
+            parseInt(id as string)
+          );
+          if (response.status === 200) {
+            setTickes(response.data);
+          }
+        } catch (error: any) {
+          console.log(error);
+        }
+      };
+
+      fetchData();
+    }
+  }, [id]);
 
   useEffect(() => {
     if (selectedTicket && AddToCartRef.current) {
@@ -85,11 +80,13 @@ const BookPage: React.FC = () => {
 
         <div className="text-xl font-semibold mb-2">Select your ticket</div>
         {/* Pass setSelectedTicket to BookingTicketList */}
-        <BookingTicketList
-          tickets={tickets}
-          selectedTicket={selectedTicket}
-          setSelectedTicket={setSelectedTicket}
-        />
+        {tickets && (
+          <BookingTicketList
+            tickets={tickets}
+            selectedTicket={selectedTicket}
+            setSelectedTicket={setSelectedTicket}
+          />
+        )}
 
         {selectedTicket && selectedDate && (
           <div
@@ -97,8 +94,9 @@ const BookPage: React.FC = () => {
             className="mt-4 bg-gray-100 p-4 shadow-lg flex justify-between items-center"
           >
             <div>
-              <p className="text-lg ">Selected Ticket: {selectedTicket.type}</p>
-              <p className="text-sm">Selected Date: {selectedDate.date}</p>
+              <p className="text-lg font-semibold ">{product}</p>
+              <p className="text-sm ">Selected Ticket: {selectedTicket.type}</p>
+              <p className="text-xs">{selectedDate.date}</p>
             </div>
             <button
               onClick={handleAddToCart}
