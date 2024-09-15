@@ -55,6 +55,13 @@ const ParkDetailPage: React.FC = () => {
     };
   }, []);
 
+  const handleBookNavigate = () => {
+    router.push({
+      pathname: "/book",
+      query: { id: id as string, product: park?.name },
+    });
+  };
+
   if (loading) {
     return (
       <>
@@ -119,7 +126,7 @@ const ParkDetailPage: React.FC = () => {
                 </div>
                 <button
                   className="bg-blue-800 text-white py-2 px-4 rounded-xl text-lg flex-grow"
-                  onClick={() => router.push(`/cart`)}
+                  onClick={handleBookNavigate}
                 >
                   Book Ticket
                 </button>
@@ -180,7 +187,7 @@ const ParkDetailPage: React.FC = () => {
                 {park.currency} {park.basePrice}
               </span>
             </div>
-            <Button variant="primary" onClick={() => router.push(`/cart`)}>
+            <Button variant="primary" onClick={handleBookNavigate}>
               Book Tickets
             </Button>
           </div>
