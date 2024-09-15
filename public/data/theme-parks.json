@@ -9,12 +9,14 @@
     "currency": "AED",
     "tickets": [
       {
+        "id": 1,
         "type": "Standard",
         "price": 299.99,
         "currency": "AED",
         "benefits": ["Access to all rides", "Free parking"]
       },
       {
+        "id": 2,
         "type": "VIP",
         "price": 499.99,
         "currency": "AED",
@@ -26,6 +28,7 @@
         ]
       },
       {
+        "id": 3,
         "type": "Family",
         "price": 899.99,
         "currency": "AED",
@@ -67,18 +70,21 @@
     "currency": "AED",
     "tickets": [
       {
+        "id": 1,
         "type": "Standard",
         "price": 249.99,
         "currency": "AED",
         "benefits": ["Access to all slides", "Locker service included"]
       },
       {
+        "id": 2,
         "type": "VIP",
         "price": 399.99,
         "currency": "AED",
         "benefits": ["Priority access", "Private cabana", "All-day meals"]
       },
       {
+        "id": 3,
         "type": "Family Package",
         "price": 799.99,
         "currency": "AED",
@@ -119,12 +125,14 @@
     "currency": "AED",
     "tickets": [
       {
+        "id": 1,
         "type": "Standard",
         "price": 349.99,
         "currency": "AED",
         "benefits": ["Access to all rides", "Free shows"]
       },
       {
+        "id": 2,
         "type": "VIP",
         "price": 549.99,
         "currency": "AED",
@@ -135,6 +143,7 @@
         ]
       },
       {
+        "id": 3,
         "type": "All-Day Pass",
         "price": 449.99,
         "currency": "AED",
@@ -171,12 +180,14 @@
     "currency": "AED",
     "tickets": [
       {
+        "id": 1,
         "type": "Standard",
         "price": 399.99,
         "currency": "AED",
         "benefits": ["Guided tour", "Access to safari park"]
       },
       {
+        "id": 2,
         "type": "VIP Tour",
         "price": 599.99,
         "currency": "AED",
@@ -187,6 +198,7 @@
         ]
       },
       {
+        "id": 3,
         "type": "Family Package",
         "price": 999.99,
         "currency": "AED",
@@ -227,18 +239,21 @@
     "currency": "AED",
     "tickets": [
       {
+        "id": 1,
         "type": "Show Only",
         "price": 199.99,
         "currency": "AED",
         "benefits": ["Dolphin show", "Seal show"]
       },
       {
+        "id": 2,
         "type": "Swim with Dolphins",
         "price": 599.99,
         "currency": "AED",
         "benefits": ["Dolphin show", "Swimming with dolphins"]
       },
       {
+        "id": 3,
         "type": "VIP Experience",
         "price": 899.99,
         "currency": "AED",
@@ -280,12 +295,14 @@
     "currency": "AED",
     "tickets": [
       {
+        "id": 1,
         "type": "Standard",
         "price": 449.99,
         "currency": "AED",
         "benefits": ["Dune bashing", "Camel ride", "BBQ dinner"]
       },
       {
+        "id": 3,
         "type": "Premium",
         "price": 649.99,
         "currency": "AED",
@@ -338,18 +355,21 @@
     "currency": "AED",
     "tickets": [
       {
+        "id": 1,
         "type": "Standard",
         "price": 299.99,
         "currency": "AED",
         "benefits": ["Skiing", "Snowboarding", "Ice skating"]
       },
       {
+        "id": 2,
         "type": "Full Access",
         "price": 399.99,
         "currency": "AED",
         "benefits": ["Unlimited skiing", "Snowboarding", "Access to snow park"]
       },
       {
+        "id": 3,
         "type": "Family Package",
         "price": 699.99,
         "currency": "AED",
@@ -385,18 +405,21 @@
     "currency": "AED",
     "tickets": [
       {
+        "id": 1,
         "type": "Standard",
         "price": 499.99,
         "currency": "AED",
         "benefits": ["Dinner", "Live music", "2-hour cruise"]
       },
       {
+        "id": 2,
         "type": "VIP",
         "price": 799.99,
         "currency": "AED",
         "benefits": ["Private table", "Exclusive menu", "4-hour cruise"]
       },
       {
+        "id": 3,
         "type": "Exclusive Package",
         "price": 1199.99,
         "currency": "AED",
@@ -433,12 +456,14 @@
     "currency": "AED",
     "tickets": [
       {
+        "id": 1,
         "type": "Standard",
         "price": 1499.99,
         "currency": "AED",
         "benefits": ["Skydive experience", "Training session", "Certificate"]
       },
       {
+        "id": 2,
         "type": "Tandem Skydive",
         "price": 1999.99,
         "currency": "AED",
@@ -449,6 +474,7 @@
         ]
       },
       {
+        "id": 3,
         "type": "Exclusive VIP Skydive",
         "price": 2499.99,
         "currency": "AED",
@@ -492,18 +518,21 @@
     "currency": "AED",
     "tickets": [
       {
+        "id": 1,
         "type": "General Admission",
         "price": 199.99,
         "currency": "AED",
         "benefits": ["Access to observation deck"]
       },
       {
+        "id": 2,
         "type": "VIP Experience",
         "price": 399.99,
         "currency": "AED",
         "benefits": ["Priority access", "VIP lounge", "Exclusive guide"]
       },
       {
+        "id": 3,
         "type": "Sunset Experience",
         "price": 299.99,
         "currency": "AED",
