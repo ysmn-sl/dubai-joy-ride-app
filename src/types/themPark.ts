@@ -15,6 +15,7 @@ export interface ThemePark {
 }
 
 export interface Ticket {
+  id: number;
   type: string;
   price: number;
   currency: string;
