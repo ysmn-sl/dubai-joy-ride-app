@@ -1,13 +1,16 @@
 import { useEffect, useRef, useState } from "react";
-import BookingTicketDateSelector from "@/components/BookingTicketDateSelector";
-import BookingTicketList from "@/components/BookingTicketList";
-import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
-import { Ticket } from "@/types/themPark";
+import { useCart } from "@/context/CartContext";
 import { useRouter } from "next/router";
+import { Ticket } from "@/types/themPark";
 import { DateInfo } from "@/types/dateInfo";
 import { getAllThemeParkTicketById } from "@/lib/themParkService";
-import { error } from "console";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import BookingTicketDateSelector from "@/components/BookingTicketDateSelector";
+import BookingTicketList from "@/components/BookingTicketList";
+import CartItem from "@/types/cartItem";
+import { Product } from "@/types/product";
+import { getProductById } from "@/lib/productService";
 
 const BookPage: React.FC = () => {
   const getTodayDateInfo = (): DateInfo => {
@@ -20,30 +23,43 @@ const BookPage: React.FC = () => {
       }),
     };
   };
-  const [tickets, setTickes] = useState<Ticket[] | null>();
-  const [selectedDate, setSelectedDate] = useState<DateInfo>(getTodayDateInfo); // State to hold selected date
-  const [selectedTicket, setSelectedTicket] = useState<Ticket | null>(null); // State to hold selected ticket
+  const [tickets, setTickets] = useState<Ticket[] | null>(null);
+  const [selectedDate, setSelectedDate] = useState<DateInfo>(getTodayDateInfo);
+  const [selectedTicket, setSelectedTicket] = useState<Ticket | null>(null);
+  const [product, setProduct] = useState<Product | null>(null);
   const router = useRouter();
-  const AddToCartRef = useRef<HTMLDivElement | null>(null);
   const { id } = router.query;
-  const { product } = router.query;
+  const AddToCartRef = useRef<HTMLDivElement | null>(null);
+  const { addToCart } = useCart(); // Use addToCart function from CartContext
 
   useEffect(() => {
     if (id) {
-      const fetchData = async () => {
+      const fetchTickets = async () => {
         try {
           const response = await getAllThemeParkTicketById(
             parseInt(id as string)
           );
           if (response.status === 200) {
-            setTickes(response.data);
+            setTickets(response.data);
           }
-        } catch (error: any) {
-          console.log(error);
+        } catch (error) {
+          console.error(error);
         }
       };
 
-      fetchData();
+      const fetchProduct = async () => {
+        try {
+          const response = await getProductById(parseInt(id as string));
+          if (response.status === 200) {
+            setProduct(response.data);
+          }
+        } catch (error) {
+          console.error(error);
+        }
+      };
+
+      fetchTickets();
+      fetchProduct();
     }
   }, [id]);
 
@@ -53,12 +69,19 @@ const BookPage: React.FC = () => {
     }
   });
 
-  // Function to handle adding the ticket to the cart
   const handleAddToCart = () => {
-    if (selectedTicket && selectedDate) {
-      router.push({
-        pathname: "/cart",
-      });
+    if (selectedTicket && product) {
+      const cartItem: CartItem = {
+        id: product.id + selectedTicket.id,
+        product: product,
+        ticket: selectedTicket,
+        date: selectedDate,
+        quantity: 1,
+        totalPrice: selectedTicket.price * 1, // Calculate total price based on ticket price
+      };
+
+      addToCart(cartItem); // Add the selected ticket to the cart
+      router.push("/cart");
     } else {
       alert("Please select both a ticket and a date.");
     }
@@ -68,18 +91,14 @@ const BookPage: React.FC = () => {
     <>
       <Navbar />
       <div className="container mx-auto pt-8 pb-16 mt-14">
-        {/* Date Selection Section */}
         <div className="mb-6">
           <div className="text-xl font-semibold mb-2">Select a date</div>
-          {/* Pass setSelectedDate to BookingTicketDateSelector */}
           <BookingTicketDateSelector
             selectedDate={selectedDate}
             setSelectedDate={setSelectedDate}
           />
         </div>
-
         <div className="text-xl font-semibold mb-2">Select your ticket</div>
-        {/* Pass setSelectedTicket to BookingTicketList */}
         {tickets && (
           <BookingTicketList
             tickets={tickets}
@@ -87,15 +106,14 @@ const BookPage: React.FC = () => {
             setSelectedTicket={setSelectedTicket}
           />
         )}
-
         {selectedTicket && selectedDate && (
           <div
             ref={AddToCartRef}
             className="mt-4 bg-gray-100 p-4 shadow-lg flex justify-between items-center"
           >
             <div>
-              <p className="text-lg font-semibold ">{product}</p>
-              <p className="text-sm ">Selected Ticket: {selectedTicket.type}</p>
+              <p className="text-lg font-semibold">{product?.name}</p>
+              <p className="text-sm">Selected Ticket: {selectedTicket.type}</p>
               <p className="text-xs">{selectedDate.date}</p>
             </div>
             <button
