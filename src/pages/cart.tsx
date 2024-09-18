@@ -1,16 +1,70 @@
+// pages/cart.tsx
+import { useState, useEffect } from "react";
+import { useRouter } from "next/router";
+import { loadStripe } from "@stripe/stripe-js";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import { useCart } from "@/context/CartContext"; // Assuming you have a CartContext
 import Image from "next/image";
+import { useCart } from "@/context/CartContext";
+
+// Load Stripe instance with your public key
+const stripePromise = loadStripe(
+  process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY!
+);
 
 const CartPage: React.FC = () => {
   const { cartItems, removeFromCart, updateCartItemQuantity } = useCart();
+  const [isLoading, setIsLoading] = useState(false);
+
+  const router = useRouter();
+  const { session_id, canceled } = router.query;
+  const [showSuccessModal, setShowSuccessModal] = useState(false);
+  const [showFailureModal, setShowFailureModal] = useState(false);
 
   const total = cartItems.reduce((acc, item) => acc + item.totalPrice, 0);
 
   const handleQuantityChange = (itemId: number, quantity: number) => {
     updateCartItemQuantity(itemId, quantity);
   };
+
+  const handleCheckout = async () => {
+    setIsLoading(true);
+    try {
+      const stripe = await stripePromise;
+      const response = await fetch("/api/create-checkout-session", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ cartItems }),
+      });
+
+      const { sessionId } = await response.json();
+      await stripe?.redirectToCheckout({ sessionId });
+    } catch (error) {
+      console.error("Error redirecting to checkout:", error);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  const handleCloseModal = () => {
+    setShowSuccessModal(false);
+    setShowFailureModal(false);
+  };
+
+  // Handle success modal
+  useEffect(() => {
+    if (session_id) {
+      // clearCart(); // Clear the cart after successful payment
+      setShowSuccessModal(true);
+    }
+  }, [session_id, router]);
+
+  // Handle failure modal
+  useEffect(() => {
+    if (canceled) {
+      setShowFailureModal(true);
+    }
+  }, [canceled, router]);
 
   return (
     <>
@@ -20,7 +74,6 @@ const CartPage: React.FC = () => {
       </p>
 
       <div className="flex flex-col lg:flex-row px-4 py-2">
-        {/* Products section */}
         <div className="flex-1 flex-col flex-grow">
           {cartItems.map((item) => (
             <div
@@ -107,8 +160,7 @@ const CartPage: React.FC = () => {
           ))}
         </div>
 
-        {/* Checkout section */}
-        <div className="flex-non w-full lg:w-1/3 md:sticky md:top-4  lg:ml-6 md:ml-0 md:self-start">
+        <div className="flex-non w-full lg:w-1/3 md:sticky md:top-4 lg:ml-6 md:ml-0 md:self-start">
           <div className="bg-gray-50 rounded-2xl px-8 py-4 shadow-lg border border-gray-50">
             <p className="text-sm md:text-lg font-semibold text-gray-800 mb-2">
               Discount Code
@@ -123,22 +175,31 @@ const CartPage: React.FC = () => {
                 Apply
               </button>
             </div>
+            <p className="text-sm font-semibold mt-4">Order Summary</p>
+            <div className="flex justify-between border-b py-2">
+              <p className="text-gray-500">Subtotal</p>
+              <p className="text-gray-500  ">AED {total.toFixed(2)}</p>
+            </div>
+            <div className="flex justify-between border-b">
+              <p className="text-gray-500">Discount</p>
+              <p className="text-gray-500 "></p>
+            </div>
+            <div className="flex justify-between py-2 ">
+              <p className="text-gray-800 font-semibold">Total</p>
+              <p className="text-gray-800 font-semibold   ">
+                AED {total.toFixed(2)}
+              </p>
+            </div>
 
-            <p className="text-sm md:text-lg font-semibold mb-2 mt-4">
-              Order Summary
-            </p>
-            <p className="py-2 border-b text-gray-600">
-              Subtotal: AED {total.toFixed(2)}
-            </p>
-            <p className="py-2 border-b text-red-400">Discount: AED discount</p>
-            <p className="text-sm md:text-lg mt-2">
-              Order Total: AED {total.toFixed(2)}
-            </p>
-            <button className="p-2 w-full mt-4 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600">
-              Proceed to Checkout
+            {/* Proceed to checkout button */}
+            <button
+              className="p-2 w-full mt-4 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600"
+              onClick={handleCheckout}
+              disabled={isLoading}
+            >
+              {isLoading ? "Processing..." : "Proceed to Checkout"}
             </button>
           </div>
-
           <div className="shadow-lg rounded-2xl p-6 mt-6 bg-blue-50 hidden lg:block border border-blue-50">
             <h2 className="text-sm md:text-lg font-semibold text-gray-800 mt-2">
               Our Payment Methods
@@ -180,6 +241,42 @@ const CartPage: React.FC = () => {
           </div>
         </div>
       </div>
+
+      {/* Show payment success modal */}
+      {showSuccessModal && (
+        <div className="fixed inset-0 bg-gray-500 bg-opacity-50 flex justify-center items-center">
+          <div className="bg-white p-8 rounded-md shadow-lg">
+            <p className="text-green-500 text-lg font-semibold">
+              Payment successful!
+            </p>
+            <button
+              className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md"
+              onClick={handleCloseModal}
+            >
+              ok
+            </button>
+          </div>
+        </div>
+      )}
+
+      {/* Show payment failure message */}
+      {showFailureModal && (
+        <div className="fixed inset-0 bg-gray-500 bg-opacity-50 flex justify-center items-center">
+          <div className="bg-white p-8 rounded-md shadow-lg">
+            <p className="text-red-500 text-lg font-semibold">
+              Payment failed or canceled.
+            </p>
+            <p>Please try again or use a different payment method.</p>
+            <button
+              className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md"
+              onClick={handleCloseModal}
+            >
+              ok
+            </button>
+          </div>
+        </div>
+      )}
+
       <Footer />
     </>
   );
