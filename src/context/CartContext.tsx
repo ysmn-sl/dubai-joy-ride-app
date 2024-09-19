@@ -5,7 +5,8 @@ interface CartContextProps {
   cartItems: CartItem[];
   addToCart: (item: CartItem) => void;
   removeFromCart: (itemId: number) => void;
-  updateCartItemQuantity: (itemId: number, quantity: number) => void; // New function
+  updateCartItemQuantity: (itemId: number, quantity: number) => void;
+  clearCart: () => void; // New function to clear the cart
 }
 
 const CartContext = createContext<CartContextProps | undefined>(undefined);
@@ -21,7 +22,6 @@ export const useCart = () => {
 export const CartProvider = ({ children }: { children: React.ReactNode }) => {
   const [cartItems, setCartItems] = useState<CartItem[]>([]);
 
-  // Load cart from localStorage on mount
   useEffect(() => {
     const storedCart = localStorage.getItem("cartItems");
     if (storedCart) {
@@ -29,7 +29,6 @@ export const CartProvider = ({ children }: { children: React.ReactNode }) => {
     }
   }, []);
 
-  // Save cart to localStorage when cartItems change
   useEffect(() => {
     localStorage.setItem("cartItems", JSON.stringify(cartItems));
   }, [cartItems]);
@@ -37,7 +36,7 @@ export const CartProvider = ({ children }: { children: React.ReactNode }) => {
   const addToCart = (item: CartItem) => {
     const itemWithTotalPrice = {
       ...item,
-      totalPrice: item.ticket.price * item.quantity, // Calculate totalPrice
+      totalPrice: item.ticket.price * item.quantity,
     };
     setCartItems((prevItems) => [...prevItems, itemWithTotalPrice]);
   };
@@ -46,7 +45,6 @@ export const CartProvider = ({ children }: { children: React.ReactNode }) => {
     setCartItems((prevItems) => prevItems.filter((item) => item.id !== itemId));
   };
 
-  // Function to update the quantity of a cart item
   const updateCartItemQuantity = (itemId: number, quantity: number) => {
     setCartItems((prevItems) =>
       prevItems.map((item) =>
@@ -57,9 +55,20 @@ export const CartProvider = ({ children }: { children: React.ReactNode }) => {
     );
   };
 
+  const clearCart = () => {
+    setCartItems([]); // Clear cart
+    localStorage.removeItem("cartItems"); // Remove cart from localStorage
+  };
+
   return (
     <CartContext.Provider
-      value={{ cartItems, addToCart, removeFromCart, updateCartItemQuantity }} // Pass the new function
+      value={{
+        cartItems,
+        addToCart,
+        removeFromCart,
+        updateCartItemQuantity,
+        clearCart,
+      }}
     >
       {children}
     </CartContext.Provider>
