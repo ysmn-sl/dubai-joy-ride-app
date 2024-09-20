@@ -8,6 +8,7 @@ import Image from "next/image";
 import { useCart } from "@/context/CartContext";
 import { ShoppingCartIcon } from "@heroicons/react/outline";
 import EmptyCart from "@/components/EmptyCart";
+import PaymentFailureModal from "@/components/PaymentFailureModal";
 
 // Load Stripe instance with your public key
 const stripePromise = loadStripe(
@@ -20,8 +21,7 @@ const CartPage: React.FC = () => {
 
   const router = useRouter();
   const { canceled } = router.query;
-  const [setShowSuccessModal] = useState(false);
-  const [showFailureModal, setShowFailureModal] = useState(false);
+  const [showFailureModal, setShowFailureModal] = useState<Boolean>(false);
 
   const total = cartItems.reduce((acc, item) => acc + item.totalPrice, 0);
 
@@ -46,10 +46,6 @@ const CartPage: React.FC = () => {
     } finally {
       setIsLoading(false);
     }
-  };
-
-  const handleCloseModal = () => {
-    setShowFailureModal(false);
   };
 
   // Handle failure modal
@@ -243,20 +239,7 @@ const CartPage: React.FC = () => {
 
       {/* Show payment failure message */}
       {showFailureModal && (
-        <div className="fixed inset-0 bg-gray-500 bg-opacity-50 flex justify-center items-center">
-          <div className="bg-white p-8 rounded-md shadow-lg">
-            <p className="text-red-500 text-lg font-semibold">
-              Payment failed or canceled.
-            </p>
-            <p>Please try again or use a different payment method.</p>
-            <button
-              className="mt-4 px-4 py-2 bg-blue-500 text-white rounded-md"
-              onClick={handleCloseModal}
-            >
-              ok
-            </button>
-          </div>
-        </div>
+        <PaymentFailureModal setShowFailureModal={setShowFailureModal} />
       )}
 
       <Footer />
