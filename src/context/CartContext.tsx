@@ -34,11 +34,28 @@ export const CartProvider = ({ children }: { children: React.ReactNode }) => {
   }, [cartItems]);
 
   const addToCart = (item: CartItem) => {
-    const itemWithTotalPrice = {
-      ...item,
-      totalPrice: item.ticket.price * item.quantity,
-    };
-    setCartItems((prevItems) => [...prevItems, itemWithTotalPrice]);
+    const existingItem = cartItems.find((cartItem) => cartItem.id === item.id);
+
+    if (existingItem) {
+      setCartItems((prevItems) =>
+        prevItems.map((cartItem) =>
+          cartItem.id === item.id
+            ? {
+                ...cartItem,
+                quantity: cartItem.quantity + item.quantity,
+                totalPrice:
+                  (cartItem.quantity + item.quantity) * cartItem.ticket.price,
+              }
+            : cartItem
+        )
+      );
+    } else {
+      const itemWithTotalPrice = {
+        ...item,
+        totalPrice: item.ticket.price * item.quantity,
+      };
+      setCartItems((prevItems) => [...prevItems, itemWithTotalPrice]);
+    }
   };
 
   const removeFromCart = (itemId: number) => {
