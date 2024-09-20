@@ -28,7 +28,7 @@ export default async function handler(
           quantity: item.quantity,
         })),
         mode: "payment",
-        success_url: `${req.headers.origin}/cart?session_id={CHECKOUT_SESSION_ID}`, // Redirect to this page after success
+        success_url: `${req.headers.origin}/orderSuccess?session_id={CHECKOUT_SESSION_ID}`, // Redirect to this page after success
         cancel_url: `${req.headers.origin}/cart?canceled=true`, // Redirect to this page if canceled
       });
 
