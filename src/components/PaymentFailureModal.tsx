@@ -1,10 +1,14 @@
+import { useRouter } from "next/router";
+
 interface Props {
   setShowFailureModal: (showFailureModal: Boolean) => void;
 }
 
 const PaymentFailureModal: React.FC<Props> = ({ setShowFailureModal }) => {
+  const router = useRouter();
   const handleCloseModal = () => {
     setShowFailureModal(false);
+    router.push("/cart");
   };
 
   return (
