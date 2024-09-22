@@ -65,11 +65,9 @@ const ParkDetailPage: React.FC = () => {
   if (loading) {
     return (
       <>
-        <Navbar />
         <div className="container mx-auto px-4 py-8">
           <p>Loading...</p>
         </div>
-        <Footer />
       </>
     );
   }
@@ -77,18 +75,15 @@ const ParkDetailPage: React.FC = () => {
   if (error) {
     return (
       <>
-        <Navbar />
         <div className="container mx-auto px-4 py-8">
           <p>{error}</p>
         </div>
-        <Footer />
       </>
     );
   }
 
   return (
     <>
-      <Navbar />
       {park && (
         <div className=" mx-auto bg-white px-4  ">
           {/*Product Section */}
@@ -193,8 +188,6 @@ const ParkDetailPage: React.FC = () => {
           </div>
         </div>
       )}
-
-      <Footer />
     </>
   );
 };

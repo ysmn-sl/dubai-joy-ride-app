@@ -53,12 +53,11 @@ const CartPage: React.FC = () => {
 
   return (
     <>
-      <Navbar />
       {cartItems.length === 0 ? (
         <EmptyCart />
       ) : (
         <>
-          <p className="px-6 font-extralight text-gray-800 mt-12 pt-14 mb-2">
+          <p className="px-6 font-extralight text-gray-800  mt-2">
             My Basket ({cartItems.length} items)
           </p>
 
@@ -161,8 +160,6 @@ const CartPage: React.FC = () => {
       {showFailureModal && (
         <PaymentFailureModal setShowFailureModal={setShowFailureModal} />
       )}
-
-      <Footer />
     </>
   );
 };

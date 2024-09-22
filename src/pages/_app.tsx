@@ -2,6 +2,7 @@
 import { CartProvider } from "@/context/CartContext";
 import "../styles/globals.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+import Layout from "@/components/Layout";
 type AppProps = {
   Component: React.ElementType;
   pageProps: any;
@@ -10,7 +11,9 @@ type AppProps = {
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <CartProvider>
-      <Component {...pageProps} className="font-poppins" />
+      <Layout>
+        <Component {...pageProps} className="font-poppins" />
+      </Layout>
     </CartProvider>
   );
 }

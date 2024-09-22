@@ -32,12 +32,10 @@ const ParkListPage: React.FC = () => {
   }, []);
   return (
     <>
-      <Navbar />
       <div className="container mx-auto px-4 py-8">
         <h1 className="text-3xl font-bold mb-6">All Theme Parks in Dubai</h1>
         {parks && <ProductList products={parks} />}
       </div>
-      <Footer />
     </>
   );
 };

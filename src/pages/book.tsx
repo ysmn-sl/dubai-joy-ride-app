@@ -4,8 +4,6 @@ import { useRouter } from "next/router";
 import { Ticket } from "@/types/themPark";
 import { DateInfo } from "@/types/dateInfo";
 import { getAllThemeParkTicketById } from "@/lib/themParkService";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import BookingTicketDateSelector from "@/components/BookingTicketDateSelector";
 import BookingTicketList from "@/components/BookingTicketList";
 import CartItem from "@/types/cartItem";
@@ -89,8 +87,7 @@ const BookPage: React.FC = () => {
 
   return (
     <>
-      <Navbar />
-      <div className="container mx-auto pt-8 pb-16 mt-14">
+      <div className="container mx-auto pt-8 pb-16 ">
         <div className="mb-6">
           <div className="text-xl font-semibold mb-2">Select a date</div>
           <BookingTicketDateSelector
@@ -125,7 +122,6 @@ const BookPage: React.FC = () => {
           </div>
         )}
       </div>
-      <Footer />
     </>
   );
 };
