@@ -28,7 +28,7 @@ const OrderSuccessPage = () => {
     if (session_id) {
       clearCart(); // Clear the cart after successful payment
     }
-  }, [session_id, router]);
+  }, [session_id, clearCart]);
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-purple-500 to-indigo-600 p-6">
