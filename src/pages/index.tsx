@@ -1,9 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
-import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import ProductList from "../components/ProductList";
-import Footer from "../components/Footer";
 import { Product } from "@/types/product";
 import { getAllProducts } from "@/lib/productService";
 
@@ -33,12 +31,10 @@ const HomePage: React.FC = () => {
 
   return (
     <>
-      <Navbar />
       <Hero />
       <div className="container mx-auto px-4 py-8 font-poppins">
         {parks && <ProductList products={parks} />}
       </div>
-      <Footer />
     </>
   );
 };
