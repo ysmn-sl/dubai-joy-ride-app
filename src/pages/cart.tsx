@@ -8,6 +8,7 @@ import { useCart } from "@/context/CartContext";
 import EmptyCart from "@/components/EmptyCart";
 import PaymentFailureModal from "@/components/PaymentFailureModal";
 import CartItemCard from "@/components/CartItemCard";
+import Image from "next/image";
 
 // Load Stripe instance with your public key
 const stripePromise = loadStripe(
@@ -118,33 +119,35 @@ const CartPage: React.FC = () => {
                   You can pay on our secure website using any of the following
                   payment methods:
                 </p>
-                <div className="grid grid-cols-4 mt-4 gap-2 px-6">
-                  <div className="flex items-center justify-center h-12">
-                    <img
+                <div className="flex justify-center mt-4 px-4">
+                  <div className="grid grid-cols-4 gap-4">
+                    <Image
                       src="/images/payment method/master.svg"
                       alt="Payment Method 1"
                       className="h-full object-contain rounded-lg"
+                      width={60}
+                      height={60}
                     />
-                  </div>
-                  <div className="flex items-center justify-center h-12">
-                    <img
+                    <Image
                       src="/images/payment method/pay.svg"
                       alt="Payment Method 2"
                       className="h-full object-contain rounded-lg"
+                      width={60}
+                      height={60}
                     />
-                  </div>
-                  <div className="flex items-center justify-center h-12">
-                    <img
+                    <Image
                       src="/images/payment method/stripe.png"
                       alt="Payment Method 3"
                       className="h-full object-contain rounded-lg"
+                      width={60}
+                      height={60}
                     />
-                  </div>
-                  <div className="flex items-center justify-center h-12">
-                    <img
+                    <Image
                       src="/images/payment method/visa.svg"
                       alt="Payment Method 4"
                       className="h-full object-contain rounded-lg"
+                      width={60}
+                      height={60}
                     />
                   </div>
                 </div>
