@@ -33,3 +33,23 @@ export const getProductById = async (
     throw error;
   }
 };
+
+export const getProductByCategory = async (
+  category: string
+): Promise<ApiResponse<Product[] | null>> => {
+  try {
+    const response: ApiResponse<Product[]> = await getAllProducts();
+
+    const products = response.data.filter(
+      (product) => product.category === category
+    );
+
+    return {
+      data: products.length > 0 ? products : null,
+      status: response.status,
+    };
+  } catch (error) {
+    console.error("Error fetching products by category:", error);
+    throw error;
+  }
+};
