@@ -4,16 +4,16 @@ import Link from "next/link";
 
 const categories = [
   { id: 1, name: "All Parks", link: "/parks" },
-  { id: 2, name: "Theme Park", link: "/" },
-  { id: 3, name: "Adventure Park", link: "/" },
-  { id: 4, name: "Safari Park", link: "/" },
-  { id: 5, name: "Aquarium", link: "/" },
-  { id: 6, name: "Desert Safari", link: "/" },
-  { id: 7, name: "Snow Park", link: "/" },
-  { id: 8, name: "Cruise", link: "/" },
-  { id: 9, name: "Skydiving", link: "/" },
-  { id: 10, name: "Landmark", link: "/" },
-  { id: 11, name: "Water Park", link: "/" },
+  { id: 2, name: "Theme Park", link: "/categories/Theme Park" },
+  { id: 3, name: "Adventure Park", link: "/categories/Adventure Park" },
+  { id: 4, name: "Safari Park", link: "/categories/Safari Park" },
+  { id: 5, name: "Aquarium", link: "/categories/Aquarium" },
+  { id: 6, name: "Desert Safari", link: "/categories/Desert Safari" },
+  { id: 7, name: "Snow Park", link: "/categories/Snow Park" },
+  { id: 8, name: "Cruise", link: "/categories/Cruise" },
+  { id: 9, name: "Skydiving", link: "/categories/Skydiving" },
+  { id: 10, name: "Landmark", link: "/categories/Landmark" },
+  { id: 11, name: "Water Park", link: "/categories/Water Park" },
 ];
 
 const Navbar: React.FC = () => {
