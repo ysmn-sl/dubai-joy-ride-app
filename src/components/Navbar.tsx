@@ -3,16 +3,17 @@ import React, { useState } from "react";
 import Link from "next/link";
 
 const categories = [
-  { id: 1, name: "Theme Park" },
-  { id: 2, name: "Water Park" },
-  { id: 3, name: "Adventure Park" },
-  { id: 4, name: "Safari Park" },
-  { id: 5, name: "Aquarium" },
-  { id: 6, name: "Desert Safari" },
-  { id: 7, name: "Snow Park" },
-  { id: 8, name: "Cruise" },
-  { id: 9, name: "Skydiving" },
-  { id: 10, name: "Landmark" },
+  { id: 1, name: "All Parks", link: "/parks" },
+  { id: 2, name: "Theme Park", link: "/" },
+  { id: 3, name: "Adventure Park", link: "/" },
+  { id: 4, name: "Safari Park", link: "/" },
+  { id: 5, name: "Aquarium", link: "/" },
+  { id: 6, name: "Desert Safari", link: "/" },
+  { id: 7, name: "Snow Park", link: "/" },
+  { id: 8, name: "Cruise", link: "/" },
+  { id: 9, name: "Skydiving", link: "/" },
+  { id: 10, name: "Landmark", link: "/" },
+  { id: 11, name: "Water Park", link: "/" },
 ];
 
 const Navbar: React.FC = () => {
@@ -75,7 +76,7 @@ const Navbar: React.FC = () => {
                 key={category.id}
                 className="text-gray-600 hover:text-blue-500 transition-colors text-2xl lg:text-base"
               >
-                <Link href={`/category/${category.id}`}>{category.name}</Link>
+                <Link href={category.link}>{category.name}</Link>
               </li>
             ))}
           </ul>
