@@ -73,7 +73,7 @@
   },
   {
     "id": 6,
-    "name": "Desert Adventure 11",
+    "name": "Desert Adventure",
     "location": "Dubai, UAE",
     "description": "Experience a thrilling desert adventure with dune bashing, camel rides, and a traditional BBQ dinner.",
     "category": "Desert Safari",
@@ -81,8 +81,8 @@
     "basePrice": 449.99,
     "currency": "AED",
     "images": [
-      "https://images.unsplash.com/photo-1517176642928-dfc2da661b3f?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://images.unsplash.com/photo-1623972860045-f2d0accbcf38?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      "https://images.unsplash.com/photo-1623972860045-f2d0accbcf38?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1517176642928-dfc2da661b3f?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     ]
   },
   {
@@ -95,7 +95,7 @@
     "basePrice": 299.99,
     "currency": "AED",
     "images": [
-      "https://images.unsplash.com/photo-1557748323-5b63eda98b91?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+      "https://images.unsplash.com/photo-1520364311437-283acc84fe43?q=80&w=1744&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     ]
   },
   {
@@ -108,8 +108,8 @@
     "basePrice": 499.99,
     "currency": "AED",
     "images": [
-      "https://images.unsplash.com/photo-1504434026032-a7e440a30b68?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      "https://images.unsplash.com/photo-1530649159659-c8beb2992433?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      "https://images.unsplash.com/photo-1677151420167-b2de389d02db?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1691399382216-61468ffb788c?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     ]
   },
   {
@@ -139,8 +139,217 @@
     "currency": "AED",
     "reviews": 600,
     "images": [
+      "https://images.unsplash.com/photo-1584666219061-41ff1808b69d?q=80&w=1636&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "https://images.unsplash.com/photo-1628155092735-d1146f19cd58?q=80&w=1527&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "https://images.unsplash.com/photo-1686906773242-bed68d99734c?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Wonderland Adventure Park",
+    "location": "Dubai, UAE",
+    "description": "A thrilling theme park experience with roller coasters, live shows, and fun for all ages.",
+    "category": "Theme Park",
+    "rating": 4.7,
+    "basePrice": 250.0,
+    "currency": "AED",
+    "images": [
+      "https://images.unsplash.com/photo-1701112501452-d4af62058499?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Magic World",
+    "location": "Dubai, UAE",
+    "description": "A magical theme park for kids with animated characters and fantasy rides.",
+    "category": "Theme Park",
+    "rating": 4.5,
+    "basePrice": 180.0,
+    "currency": "AED",
+    "images": [
+      "https://images.unsplash.com/photo-1502137840985-4ec07e8568bf?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Dubai Safari Park",
+    "location": "Dubai, UAE",
+    "description": "Explore the wildlife of Dubai in this grand safari park featuring lions, tigers, and more.",
+    "category": "Safari Park",
+    "rating": 4.8,
+    "basePrice": 150.0,
+    "currency": "AED",
+    "images": [
+      "https://images.unsplash.com/photo-1592803883394-eeaa36f92a70?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1514616127493-6f9fe2d52a89?q=80&w=1760&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Dubai Aquarium & Underwater Zoo",
+    "location": "Dubai Mall, Dubai, UAE",
+    "description": "An extraordinary underwater experience featuring exotic marine life and interactive exhibits.",
+    "category": "Aquarium",
+    "rating": 4.9,
+    "basePrice": 100.0,
+    "currency": "AED",
+    "images": [
+      "https://images.unsplash.com/photo-1519766030446-ae88fde27309?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1491933367339-d869a4dcc137?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Luxury Desert Safari",
+    "location": "Dubai, UAE",
+    "description": "Enjoy an exclusive desert safari with private guides, luxury tents, and gourmet dining.",
+    "category": "Desert Safari",
+    "rating": 5.0,
+    "basePrice": 800.0,
+    "currency": "AED",
+    "images": [
+      "https://images.unsplash.com/photo-1624062999726-083e5268525d?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1494674822861-3b92f7b9290b?q=80&w=1582&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1494675006433-9e9428eba6c7?q=80&w=1746&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Ski Dubai",
+    "location": "Mall of the Emirates, Dubai, UAE",
+    "description": "Ski in the desert! Dubai’s iconic indoor ski resort featuring real snow, ski slopes, and snowboarding.",
+    "category": "Snow Park",
+    "rating": 4.6,
+    "basePrice": 350.0,
+    "currency": "AED",
+    "images": [
+      "https://images.unsplash.com/photo-1574892541509-aea39a8745d9?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1550035213-ad21a6cf4288?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Skydive Dubai",
+    "location": "Dubai Marina, Dubai, UAE",
+    "description": "Experience the thrill of freefalling over the stunning Palm Jumeirah.",
+    "category": "Skydiving",
+    "rating": 4.9,
+    "basePrice": 1600.0,
+    "currency": "AED",
+    "images": [
+      "https://images.unsplash.com/photo-1640968272493-8bc83db2cf41?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Burj Khalifa",
+    "location": "Downtown Dubai, UAE",
+    "description": "The tallest building in the world, offering breathtaking views from the observation deck.",
+    "category": "Landmark",
+    "rating": 4.8,
+    "basePrice": 150.0,
+    "currency": "AED",
+    "images": [
+      "https://images.unsplash.com/photo-1583012802443-efc6e8b00f5f?q=80&w=1635&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Aquaventure Waterpark",
+    "location": "Atlantis, The Palm, Dubai, UAE",
+    "description": "The ultimate waterpark experience featuring thrilling slides and a lazy river.",
+    "category": "Water Park",
+    "rating": 4.7,
+    "basePrice": 300.0,
+    "currency": "AED",
+    "reviews": 800,
+    "images": [
+      "https://images.unsplash.com/photo-1572477722570-8a909f42ca6d?q=80&w=1664&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1563178024-0e18e1aa0415?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ]
+  },
+
+  {
+    "id": 20,
+    "name": "Desert Safari",
+    "location": "Dubai, UAE",
+    "description": "Experience the thrill of dune bashing followed by a traditional desert camp experience.",
+    "category": "Adventure",
+    "rating": 4.8,
+    "basePrice": 499.99,
+    "currency": "AED",
+    "reviews": 300,
+    "images": [
+      "https://images.unsplash.com/photo-1549944850-84e00be4203b?q=80&w=1668&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Jet Ski Adventure",
+    "location": "Dubai, UAE",
+    "description": "Jet ski across Dubai's famous coastline with views of Burj Al Arab.",
+    "category": "Adventure",
+    "rating": 4.9,
+    "basePrice": 399.99,
+    "currency": "AED",
+    "reviews": 250,
+    "images": [
+      "https://images.unsplash.com/photo-1635068255660-22c0cecdb922?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Mountain Trekking",
+    "location": "Hatta, UAE",
+    "description": "Explore the Hatta mountains with an experienced guide.",
+    "category": "Adventure",
+    "rating": 4.6,
+    "basePrice": 299.99,
+    "currency": "AED",
+    "images": [
+      "https://images.unsplash.com/photo-1559830379-cbe0ad93161d?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1634994479491-88608622277e?q=80&w=1564&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1616879151261-c814c3d07215?q=80&w=1635&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1623202342678-7bd444ce632a?q=80&w=1620&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Zip Line Adventure",
+    "location": "Ras Al Khaimah, UAE",
+    "description": "Soar through the mountains of Ras Al Khaimah on the world’s longest zipline.",
+    "category": "Adventure",
+    "rating": 4.9,
+    "basePrice": 599.99,
+    "currency": "AED",
+    "images": [
+      "https://images.unsplash.com/photo-1664735094820-c6c40d862d5b?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Scuba Diving",
+    "location": "Fujairah, UAE",
+    "description": "Discover the underwater world of Fujairah with a scuba diving adventure.",
+    "category": "Adventure",
+    "rating": 4.7,
+    "basePrice": 799.99,
+    "currency": "AED",
+    "images": [
+      "https://images.unsplash.com/photo-1682687982502-1529b3b33f85?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Dubai Museum",
+    "location": "Dubai, UAE",
+    "description": "Explore the rich history of Dubai at this renowned museum located in Al Fahidi Fort.",
+    "category": "Culture",
+    "rating": 4.5,
+    "basePrice": 49.99,
+    "currency": "AED",
+    "images": [
+      "https://images.unsplash.com/photo-1667592441284-b590021411e3?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     ]
   }
 ]
