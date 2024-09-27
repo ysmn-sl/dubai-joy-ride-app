@@ -558,5 +558,625 @@
       "phone": "+971 4 123 4567",
       "email": "info@burjkhalifa.com"
     }
+  },
+  {
+    "id": 11,
+    "name": "Wonderland Adventure Park",
+    "location": "Dubai, UAE",
+    "description": "A thrilling theme park experience with roller coasters, live shows, and fun for all ages.",
+    "category": "Theme Park",
+    "basePrice": 250.0,
+    "currency": "AED",
+    "tickets": [
+      {
+        "id": 1,
+        "type": "Standard",
+        "price": 250.0,
+        "currency": "AED",
+        "benefits": ["Unlimited rides", "Access to live shows"]
+      },
+      {
+        "id": 2,
+        "type": "VIP",
+        "price": 450.0,
+        "currency": "AED",
+        "benefits": ["Skip the line", "Access to VIP lounge"]
+      }
+    ],
+    "rating": 4.7,
+    "reviews": 400,
+    "images": [
+      "https://images.unsplash.com/photo-1701112501452-d4af62058499?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "openingHours": {
+      "monday": "10:00 - 22:00",
+      "tuesday": "10:00 - 22:00",
+      "wednesday": "10:00 - 22:00",
+      "thursday": "10:00 - 22:00",
+      "friday": "10:00 - 22:00",
+      "saturday": "10:00 - 22:00",
+      "sunday": "10:00 - 22:00"
+    },
+    "contact": {
+      "phone": "+971 4 567 8906",
+      "email": "info@wonderland.com"
+    }
+  },
+  {
+    "id": 12,
+    "name": "Magic World",
+    "location": "Dubai, UAE",
+    "description": "A magical theme park for kids with animated characters and fantasy rides.",
+    "category": "Theme Park",
+    "basePrice": 180.0,
+    "currency": "AED",
+    "tickets": [
+      {
+        "id": 1,
+        "type": "Standard",
+        "price": 180.0,
+        "currency": "AED",
+        "benefits": ["Unlimited rides", "Access to playgrounds"]
+      },
+      {
+        "id": 2,
+        "type": "VIP",
+        "price": 350.0,
+        "currency": "AED",
+        "benefits": ["Meet and greet characters", "Priority rides access"]
+      }
+    ],
+    "rating": 4.5,
+    "reviews": 300,
+    "images": [
+      "https://images.unsplash.com/photo-1502137840985-4ec07e8568bf?q=80&w=1738&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "openingHours": {
+      "monday": "09:00 - 21:00",
+      "tuesday": "09:00 - 21:00",
+      "wednesday": "09:00 - 21:00",
+      "thursday": "09:00 - 21:00",
+      "friday": "09:00 - 21:00",
+      "saturday": "09:00 - 21:00",
+      "sunday": "09:00 - 21:00"
+    },
+    "contact": {
+      "phone": "+971 4 567 8907",
+      "email": "info@magicworld.com"
+    }
+  },
+  {
+    "id": 13,
+    "name": "Dubai Safari Park",
+    "location": "Dubai, UAE",
+    "description": "Explore the wildlife of Dubai in this grand safari park featuring lions, tigers, and more.",
+    "category": "Safari Park",
+    "basePrice": 150.0,
+    "currency": "AED",
+    "tickets": [
+      {
+        "id": 1,
+        "type": "Standard",
+        "price": 150.0,
+        "currency": "AED",
+        "benefits": ["Park access", "Animal feeding sessions"]
+      },
+      {
+        "id": 2,
+        "type": "VIP",
+        "price": 300.0,
+        "currency": "AED",
+        "benefits": ["Private tour", "Exclusive animal interactions"]
+      }
+    ],
+    "rating": 4.8,
+    "reviews": 600,
+    "images": [
+      "https://images.unsplash.com/photo-1592803883394-eeaa36f92a70?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1514616127493-6f9fe2d52a89?q=80&w=1760&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "openingHours": {
+      "monday": "08:00 - 18:00",
+      "tuesday": "08:00 - 18:00",
+      "wednesday": "08:00 - 18:00",
+      "thursday": "08:00 - 18:00",
+      "friday": "08:00 - 18:00",
+      "saturday": "08:00 - 18:00",
+      "sunday": "08:00 - 18:00"
+    },
+    "contact": {
+      "phone": "+971 4 567 8908",
+      "email": "info@safariparkdubai.com"
+    }
+  },
+  {
+    "id": 14,
+    "name": "Dubai Aquarium & Underwater Zoo",
+    "location": "Dubai Mall, Dubai, UAE",
+    "description": "An extraordinary underwater experience featuring exotic marine life and interactive exhibits.",
+    "category": "Aquarium",
+    "basePrice": 100.0,
+    "currency": "AED",
+    "tickets": [
+      {
+        "id": 1,
+        "type": "Standard",
+        "price": 100.0,
+        "currency": "AED",
+        "benefits": ["Aquarium access", "Underwater tunnel"]
+      },
+      {
+        "id": 2,
+        "type": "VIP",
+        "price": 200.0,
+        "currency": "AED",
+        "benefits": ["Glass bottom boat tour", "Shark feeding experience"]
+      }
+    ],
+    "rating": 4.9,
+    "reviews": 1000,
+    "images": [
+      "https://images.unsplash.com/photo-1519766030446-ae88fde27309?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1491933367339-d869a4dcc137?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "openingHours": {
+      "monday": "10:00 - 22:00",
+      "tuesday": "10:00 - 22:00",
+      "wednesday": "10:00 - 22:00",
+      "thursday": "10:00 - 22:00",
+      "friday": "10:00 - 22:00",
+      "saturday": "10:00 - 22:00",
+      "sunday": "10:00 - 22:00"
+    },
+    "contact": {
+      "phone": "+971 4 567 8911",
+      "email": "info@dubaiaquarium.com"
+    }
+  },
+  {
+    "id": 15,
+    "name": "Luxury Desert Safari",
+    "location": "Dubai, UAE",
+    "description": "Enjoy an exclusive desert safari with private guides, luxury tents, and gourmet dining.",
+    "category": "Desert Safari",
+    "basePrice": 800.0,
+    "currency": "AED",
+    "tickets": [
+      {
+        "id": 1,
+        "type": "Standard",
+        "price": 800.0,
+        "currency": "AED",
+        "benefits": ["Private guide", "Luxury tent stay", "Gourmet dinner"]
+      }
+    ],
+    "rating": 5.0,
+    "reviews": 200,
+    "images": [
+      "https://images.unsplash.com/photo-1624062999726-083e5268525d?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1494674822861-3b92f7b9290b?q=80&w=1582&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1494675006433-9e9428eba6c7?q=80&w=1746&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "openingHours": {
+      "monday": "16:00 - 23:00",
+      "tuesday": "16:00 - 23:00",
+      "wednesday": "16:00 - 23:00",
+      "thursday": "16:00 - 23:00",
+      "friday": "16:00 - 23:00",
+      "saturday": "16:00 - 23:00",
+      "sunday": "16:00 - 23:00"
+    },
+    "contact": {
+      "phone": "+971 4 567 8912",
+      "email": "info@luxurydesertsafari.com"
+    }
+  },
+  {
+    "id": 16,
+    "name": "Ski Dubai",
+    "location": "Mall of the Emirates, Dubai, UAE",
+    "description": "Ski in the desert! Dubai’s iconic indoor ski resort featuring real snow, ski slopes, and snowboarding.",
+    "category": "Snow Park",
+    "basePrice": 350.0,
+    "currency": "AED",
+    "tickets": [
+      {
+        "id": 1,
+        "type": "Standard",
+        "price": 350.0,
+        "currency": "AED",
+        "benefits": ["Unlimited slope access", "Snow gear included"]
+      },
+      {
+        "id": 2,
+        "type": "VIP",
+        "price": 600.0,
+        "currency": "AED",
+        "benefits": ["Private instructor", "All-day access"]
+      }
+    ],
+    "rating": 4.6,
+    "reviews": 700,
+    "images": [
+      "https://images.unsplash.com/photo-1574892541509-aea39a8745d9?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1550035213-ad21a6cf4288?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "openingHours": {
+      "monday": "10:00 - 23:00",
+      "tuesday": "10:00 - 23:00",
+      "wednesday": "10:00 - 23:00",
+      "thursday": "10:00 - 23:00",
+      "friday": "10:00 - 23:00",
+      "saturday": "10:00 - 23:00",
+      "sunday": "10:00 - 23:00"
+    },
+    "contact": {
+      "phone": "+971 4 567 8913",
+      "email": "info@skidubai.com"
+    }
+  },
+  {
+    "id": 17,
+    "name": "Skydive Dubai",
+    "location": "Dubai Marina, Dubai, UAE",
+    "description": "Experience the thrill of freefalling over the stunning Palm Jumeirah.",
+    "category": "Skydiving",
+    "basePrice": 1600.0,
+    "currency": "AED",
+    "tickets": [
+      {
+        "id": 1,
+        "type": "Tandem",
+        "price": 1600.0,
+        "currency": "AED",
+        "benefits": ["Freefall experience", "Video and photo package"]
+      }
+    ],
+    "rating": 4.9,
+    "reviews": 500,
+    "images": [
+      "https://images.unsplash.com/photo-1640968272493-8bc83db2cf41?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "openingHours": {
+      "monday": "09:00 - 18:00",
+      "tuesday": "09:00 - 18:00",
+      "wednesday": "09:00 - 18:00",
+      "thursday": "09:00 - 18:00",
+      "friday": "09:00 - 18:00",
+      "saturday": "09:00 - 18:00",
+      "sunday": "09:00 - 18:00"
+    },
+    "contact": {
+      "phone": "+971 4 567 8914",
+      "email": "info@skydive.com"
+    }
+  },
+  {
+    "id": 18,
+    "name": "Burj Khalifa",
+    "location": "Downtown Dubai, UAE",
+    "description": "The tallest building in the world, offering breathtaking views from the observation deck.",
+    "category": "Landmark",
+    "basePrice": 150.0,
+    "currency": "AED",
+    "tickets": [
+      {
+        "id": 1,
+        "type": "Standard",
+        "price": 150.0,
+        "currency": "AED",
+        "benefits": ["Access to observation deck", "Free guided tour"]
+      }
+    ],
+    "rating": 4.8,
+    "reviews": 900,
+    "images": [
+      "https://images.unsplash.com/photo-1583012802443-efc6e8b00f5f?q=80&w=1635&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "openingHours": {
+      "monday": "08:30 - 22:00",
+      "tuesday": "08:30 - 22:00",
+      "wednesday": "08:30 - 22:00",
+      "thursday": "08:30 - 22:00",
+      "friday": "08:30 - 22:00",
+      "saturday": "08:30 - 22:00",
+      "sunday": "08:30 - 22:00"
+    },
+    "contact": {
+      "phone": "+971 4 567 8915",
+      "email": "info@burjkhalifa.com"
+    }
+  },
+  {
+    "id": 19,
+    "name": "Aquaventure Waterpark",
+    "location": "Atlantis, The Palm, Dubai, UAE",
+    "description": "The ultimate waterpark experience featuring thrilling slides and a lazy river.",
+    "category": "Water Park",
+    "basePrice": 300.0,
+    "currency": "AED",
+    "tickets": [
+      {
+        "id": 1,
+        "type": "Standard",
+        "price": 300.0,
+        "currency": "AED",
+        "benefits": ["Unlimited access to slides", "Beach access"]
+      }
+    ],
+    "rating": 4.7,
+    "reviews": 800,
+    "images": [
+      "https://images.unsplash.com/photo-1572477722570-8a909f42ca6d?q=80&w=1664&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1563178024-0e18e1aa0415?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "openingHours": {
+      "monday": "10:00 - 18:00",
+      "tuesday": "10:00 - 18:00",
+      "wednesday": "10:00 - 18:00",
+      "thursday": "10:00 - 18:00",
+      "friday": "10:00 - 18:00",
+      "saturday": "10:00 - 18:00",
+      "sunday": "10:00 - 18:00"
+    },
+    "contact": {
+      "phone": "+971 4 567 8916",
+      "email": "info@aquaventure.com"
+    }
+  },
+
+  {
+    "id": 20,
+    "name": "Desert Safari",
+    "location": "Dubai, UAE",
+    "description": "Experience the thrill of dune bashing followed by a traditional desert camp experience.",
+    "category": "Adventure",
+    "basePrice": 499.99,
+    "currency": "AED",
+    "tickets": [
+      {
+        "id": 1,
+        "type": "Standard",
+        "price": 499.99,
+        "currency": "AED",
+        "benefits": ["Dune bashing", "BBQ dinner", "Camel ride"]
+      },
+      {
+        "id": 2,
+        "type": "VIP",
+        "price": 699.99,
+        "currency": "AED",
+        "benefits": ["Dune bashing", "BBQ dinner", "Private camp"]
+      }
+    ],
+    "rating": 4.8,
+    "reviews": 300,
+    "images": [
+      "https://images.unsplash.com/photo-1549944850-84e00be4203b?q=80&w=1668&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "openingHours": {
+      "monday": "16:00 - 22:00",
+      "tuesday": "16:00 - 22:00",
+      "wednesday": "16:00 - 22:00",
+      "thursday": "16:00 - 22:00",
+      "friday": "16:00 - 22:00",
+      "saturday": "16:00 - 22:00",
+      "sunday": "16:00 - 22:00"
+    },
+    "contact": {
+      "phone": "+971 4 567 8901",
+      "email": "info@desertsafari.com"
+    }
+  },
+  {
+    "id": 21,
+    "name": "Jet Ski Adventure",
+    "location": "Dubai, UAE",
+    "description": "Jet ski across Dubai's famous coastline with views of Burj Al Arab.",
+    "category": "Adventure",
+    "basePrice": 399.99,
+    "currency": "AED",
+    "tickets": [
+      {
+        "id": 1,
+        "type": "Standard",
+        "price": 399.99,
+        "currency": "AED",
+        "benefits": ["30-minute ride", "Safety equipment"]
+      },
+      {
+        "id": 2,
+        "type": "VIP",
+        "price": 599.99,
+        "currency": "AED",
+        "benefits": ["60-minute ride", "Private guide"]
+      }
+    ],
+    "rating": 4.9,
+    "reviews": 250,
+    "images": [
+      "https://images.unsplash.com/photo-1635068255660-22c0cecdb922?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "openingHours": {
+      "monday": "09:00 - 18:00",
+      "tuesday": "09:00 - 18:00",
+      "wednesday": "09:00 - 18:00",
+      "thursday": "09:00 - 18:00",
+      "friday": "09:00 - 18:00",
+      "saturday": "09:00 - 18:00",
+      "sunday": "09:00 - 18:00"
+    },
+    "contact": {
+      "phone": "+971 4 567 8902",
+      "email": "info@jetskiadventure.com"
+    }
+  },
+  {
+    "id": 22,
+    "name": "Mountain Trekking",
+    "location": "Hatta, UAE",
+    "description": "Explore the Hatta mountains with an experienced guide.",
+    "category": "Adventure",
+    "basePrice": 299.99,
+    "currency": "AED",
+    "tickets": [
+      {
+        "id": 1,
+        "type": "Standard",
+        "price": 299.99,
+        "currency": "AED",
+        "benefits": ["Guided tour", "Lunch included"]
+      },
+      {
+        "id": 2,
+        "type": "VIP",
+        "price": 499.99,
+        "currency": "AED",
+        "benefits": ["Private guide", "Lunch and refreshments"]
+      }
+    ],
+    "rating": 4.6,
+    "reviews": 180,
+    "images": [
+      "https://images.unsplash.com/photo-1559830379-cbe0ad93161d?q=80&w=1674&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1634994479491-88608622277e?q=80&w=1564&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1616879151261-c814c3d07215?q=80&w=1635&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1623202342678-7bd444ce632a?q=80&w=1620&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "openingHours": {
+      "monday": "07:00 - 17:00",
+      "tuesday": "07:00 - 17:00",
+      "wednesday": "07:00 - 17:00",
+      "thursday": "07:00 - 17:00",
+      "friday": "07:00 - 17:00",
+      "saturday": "07:00 - 17:00",
+      "sunday": "07:00 - 17:00"
+    },
+    "contact": {
+      "phone": "+971 4 567 8903",
+      "email": "info@mountaintrekking.com"
+    }
+  },
+  {
+    "id": 23,
+    "name": "Zip Line Adventure",
+    "location": "Ras Al Khaimah, UAE",
+    "description": "Soar through the mountains of Ras Al Khaimah on the world’s longest zipline.",
+    "category": "Adventure",
+    "basePrice": 599.99,
+    "currency": "AED",
+    "tickets": [
+      {
+        "id": 1,
+        "type": "Standard",
+        "price": 599.99,
+        "currency": "AED",
+        "benefits": ["Safety gear", "45-minute ride"]
+      },
+      {
+        "id": 2,
+        "type": "VIP",
+        "price": 799.99,
+        "currency": "AED",
+        "benefits": ["Private session", "Free souvenirs"]
+      }
+    ],
+    "rating": 4.9,
+    "reviews": 320,
+    "images": [
+      "https://images.unsplash.com/photo-1664735094820-c6c40d862d5b?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "openingHours": {
+      "monday": "09:00 - 17:00",
+      "tuesday": "09:00 - 17:00",
+      "wednesday": "09:00 - 17:00",
+      "thursday": "09:00 - 17:00",
+      "friday": "09:00 - 17:00",
+      "saturday": "09:00 - 17:00",
+      "sunday": "09:00 - 17:00"
+    },
+    "contact": {
+      "phone": "+971 4 567 8904",
+      "email": "info@ziplineadventure.com"
+    }
+  },
+  {
+    "id": 24,
+    "name": "Scuba Diving",
+    "location": "Fujairah, UAE",
+    "description": "Discover the underwater world of Fujairah with a scuba diving adventure.",
+    "category": "Adventure",
+    "basePrice": 799.99,
+    "currency": "AED",
+    "tickets": [
+      {
+        "id": 1,
+        "type": "Standard",
+        "price": 799.99,
+        "currency": "AED",
+        "benefits": ["Equipment included", "1-hour dive"]
+      },
+      {
+        "id": 2,
+        "type": "VIP",
+        "price": 999.99,
+        "currency": "AED",
+        "benefits": ["Private instructor", "Underwater photography"]
+      }
+    ],
+    "rating": 4.7,
+    "reviews": 230,
+    "images": [
+      "https://images.unsplash.com/photo-1682687982502-1529b3b33f85?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "openingHours": {
+      "monday": "08:00 - 18:00",
+      "tuesday": "08:00 - 18:00",
+      "wednesday": "08:00 - 18:00",
+      "thursday": "08:00 - 18:00",
+      "friday": "08:00 - 18:00",
+      "saturday": "08:00 - 18:00",
+      "sunday": "08:00 - 18:00"
+    },
+    "contact": {
+      "phone": "+971 4 567 8905",
+      "email": "info@scubadiving.com"
+    }
+  },
+  {
+    "id": 25,
+    "name": "Dubai Museum",
+    "location": "Dubai, UAE",
+    "description": "Explore the rich history of Dubai at this renowned museum located in Al Fahidi Fort.",
+    "category": "Culture",
+    "basePrice": 49.99,
+    "currency": "AED",
+    "tickets": [
+      {
+        "id": 1,
+        "type": "Standard",
+        "price": 49.99,
+        "currency": "AED",
+        "benefits": ["Museum access", "Audio guide"]
+      }
+    ],
+    "rating": 4.5,
+    "reviews": 450,
+    "images": [
+      "https://images.unsplash.com/photo-1667592441284-b590021411e3?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "openingHours": {
+      "monday": "09:00 - 18:00",
+      "tuesday": "09:00 - 18:00",
+      "wednesday": "09:00 - 18:00",
+      "thursday": "09:00 - 18:00",
+      "friday": "09:00 - 18:00",
+      "saturday": "09:00 - 18:00",
+      "sunday": "09:00 - 18:00"
+    },
+    "contact": {
+      "phone": "+971 4 567 8910",
+      "email": "info@dubaimuseum.com"
+    }
   }
 ]
