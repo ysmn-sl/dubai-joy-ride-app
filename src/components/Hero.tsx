@@ -11,7 +11,7 @@ const Hero: React.FC = () => {
 
   return (
     <section
-      className="relative bg-cover bg-center h-[40vh] lg:h-[50vh] flex items-center justify-center transition-all ease-in-out duration-500"
+      className="relative bg-cover bg-center h-[40vh] lg:h-[50vh] flex items-center justify-center transition-all ease-in-out duration-500 pt-16"
       style={{ backgroundImage: 'url("/images/cover-hero.jpg")' }}
     >
       <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black opacity-70"></div>
